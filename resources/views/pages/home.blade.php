@@ -470,7 +470,7 @@
             </div>
             <div class="col-lg-12">
                 <div class="text-center">
-                    <a type="button" class="button icon mb-10 mr-10 mt-lg-5 mt-3" href="">
+                    <a type="button" class="button button-border  icon mb-10 mr-10 mt-lg-5 mt-3" href="">
                         Voir plus ... » </a>
                 </div>
             </div>
@@ -496,7 +496,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="isotope-filters">
-                    <button data-filter="" class="active">Show All</button>
+                    <button data-filter="" class="active" class=" button button-border ">Show All</button>
                     <button data-filter=".leadership">leadership</button>
                     <button data-filter=".development">development</button>
                     <button data-filter=".Design">Design</button>
@@ -663,7 +663,7 @@
             </div>
             <div class="col-lg-12">
                 <div class="text-center">
-                    <a type="button" class="button icon mb-10 mr-10 mt-lg-5 mt-3" href="">
+                    <a type="button" class="button button-border  icon mb-10 mr-10 mt-lg-5 mt-3" href="">
                         Voir plus ... » </a>
                 </div>
             </div>
@@ -972,7 +972,7 @@
 
             <div class="col-lg-12">
                 <div class="text-center">
-                    <a type="button" class="button icon mb-10 mr-10 mt-lg-5 mt-3" href="">
+                    <a type="button" class="button button-border icon mb-10 mr-10 mt-lg-5 mt-3" href="">
                         Voir plus ... » </a>
                 </div>
             </div>
@@ -996,28 +996,28 @@
                 <h6 class="lacks-heading d-none">Lacks Heading</h6> <!-- lacks heading for w3c -->
                 <div class="owl-carousel" data-items="5" data-sm-items="4" data-xs-items="3" data-xx-items="2">
                     <div class="item">
-                        <img class="mx-auto img-fluid" src="images/clients/light/06.png" alt="">
+                        <img class="mx-auto img-fluid" src="assets/images/clients/light/06.png" alt="">
                     </div>
                     <div class="item">
-                        <img class="mx-auto img-fluid" src="images/clients/light/07.png" alt="">
+                        <img class="mx-auto img-fluid" src="assets/images/clients/light/07.png" alt="">
                     </div>
                     <div class="item">
-                        <img class="mx-auto img-fluid" src="images/clients/light/08.png" alt="">
+                        <img class="mx-auto img-fluid" src="assets/images/clients/light/08.png" alt="">
                     </div>
                     <div class="item">
-                        <img class="mx-auto img-fluid" src="images/clients/light/09.png" alt="">
+                        <img class="mx-auto img-fluid" src="assets/images/clients/light/09.png" alt="">
                     </div>
                     <div class="item">
-                        <img class="mx-auto img-fluid" src="images/clients/light/10.png" alt="">
+                        <img class="mx-auto img-fluid" src="assets/images/clients/light/10.png" alt="">
                     </div>
                     <div class="item">
-                        <img class="mx-auto img-fluid" src="images/clients/light/06.png" alt="">
+                        <img class="mx-auto img-fluid" src="assets/images/clients/light/06.png" alt="">
                     </div>
                     <div class="item">
-                        <img class="mx-auto img-fluid" src="images/clients/light/08.png" alt="">
+                        <img class="mx-auto img-fluid" src="assets/images/clients/light/08.png" alt="">
                     </div>
                     <div class="item">
-                        <img class="mx-auto img-fluid" src="images/clients/light/09.png" alt="">
+                        <img class="mx-auto img-fluid" src="assets/images/clients/light/09.png" alt="">
                     </div>
                 </div>
             </div>

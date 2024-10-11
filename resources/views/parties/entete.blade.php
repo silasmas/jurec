@@ -10,7 +10,7 @@
 <title>{{ config('app.name')}} | {{ isset($titre)?$titre:"" }}</title>
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="{{ asset('assets/images/2.jpg') }}" />
+<link rel="shortcut icon" href="{{ asset('assets/images/2.png') }}" />
 
 <!-- font -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900">
