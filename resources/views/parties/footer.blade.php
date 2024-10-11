@@ -46,7 +46,7 @@
         </div>
         <div class="row top">
             <div class="col-lg-6 col-md-6">
-                <img class="img-fluid" id="logo-footer" src="{{ asset('assets/images/jurec.png') }}" alt="">
+                <img class="img-fluid" id="logo-footer" src="{{ asset('assets/images/3.jpg') }}" alt="">
             </div>
 
             <div class="col-lg-6 col-md-6">

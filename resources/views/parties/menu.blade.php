@@ -16,7 +16,7 @@
                                 <li>
                                     <a href="#">
                                         <img id="logo_img" height="200" width="100"
-                                            src="{{ asset('assets/images/jurec.png') }}" alt="logo">
+                                            src="{{ asset('assets/images/logo.jpg') }}" alt="logo">
                                     </a>
                                 </li>
                             </ul>
