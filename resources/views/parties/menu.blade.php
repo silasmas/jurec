@@ -15,8 +15,8 @@
                             <ul class="menu-logo">
                                 <li>
                                     <a href="#">
-                                        <img id="logo_img"
-                                            src="{{ asset('assets/images/logo.jpg') }}" alt="logo">
+                                        <img id="logo_img" height="200" width="200"
+                                            src="{{ asset('assets/images/3.jpg') }}" alt="logo">
                                     </a>
                                 </li>
                             </ul>
