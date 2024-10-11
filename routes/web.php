@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\about;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,9 +15,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',  [about::class, 'index'])->name('home');
+Route::get('about',  [about::class, 'about'])->name('about');
+Route::get('equipe',  [about::class, 'team'])->name('equipe');
+Route::get('services',  [about::class, 'services'])->name('services');
+Route::get('domaine',  [about::class, 'domaines'])->name('projets');
+Route::get('projets',  [about::class, 'projet'])->name('publications');
+Route::get('publications',  [about::class, 'blog'])->name('home');
+Route::get('contact',  [about::class, 'contact'])->name('contact');
+
+Route::get('detailEquipe/{slug}',  [about::class, 'detailTeam'])->name('detailEquipe');
+Route::get('detailService/{slug}',  [about::class, 'detailService'])->name('detailService');
+Route::get('detailDomaine/{slug}',  [about::class, 'detailDomaine'])->name('detailDomaine');
+Route::get('detailProjet/{slug}',  [about::class, 'detailProjet'])->name('detailProjet');
+Route::get('detailBlog/{slug}',  [about::class, 'detailBlog'])->name('detailBlog');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -28,4 +40,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
