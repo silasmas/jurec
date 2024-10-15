@@ -481,198 +481,7 @@
 <!--=================================
    service -->
 
-
-<section class="meet-team gray-bg page-section-ptb">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title text-center">
-                    <h6>Découvrez les visages derrière notre succès</h6>
-                    <h2 class="title-effect">Notre équipe</h2>
-                    <p>Voici l'équipe qui transforme nos idées en réalité, unissant talents et expertise.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="isotope-filters">
-                    <button data-filter="" class="active" class=" button button-border ">Show All</button>
-                    <button data-filter=".leadership">leadership</button>
-                    <button data-filter=".development">development</button>
-                    <button data-filter=".Design">Design</button>
-                    <button data-filter=".design">design</button>
-                </div>
-                <div class="isotope full-screen columns-4 no-padding">
-                    <div class="grid-item leadership design development">
-                        <div class="team team-overlay">
-                            <div class="team-photo">
-                                <img class="img-fluid mx-auto" src="assets/images/team/13.jpg" alt="">
-                            </div>
-                            <div class="team-description">
-                                <div class="team-info">
-                                    <h5> <a href="team-single.html" class="text-white">Martin Smit</a></h5>
-                                    <span class="text-white">CEO</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item design">
-                        <div class="team team-overlay">
-                            <div class="team-photo">
-                                <img class="img-fluid mx-auto" src="assets/images/team/14.jpg" alt="">
-                            </div>
-                            <div class="team-description">
-                                <div class="team-info">
-                                    <h5> <a href="team-single.html" class="text-white">Paul Flaviu</a></h5>
-                                    <span class="text-white">Design</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item design development">
-                        <div class="team team-overlay">
-                            <div class="team-photo">
-                                <img class="img-fluid mx-auto" src="assets/images/team/15.jpg" alt="">
-                            </div>
-                            <div class="team-description">
-                                <div class="team-info">
-                                    <h5> <a href="team-single.html" class="text-white">Anne Smith</a></h5>
-                                    <span class="text-white">Community</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item leadership Design">
-                        <div class="team team-overlay">
-                            <div class="team-photo">
-                                <img class="img-fluid mx-auto" src="assets/images/team/16.jpg" alt="">
-                            </div>
-                            <div class="team-description">
-                                <div class="team-info">
-                                    <h5> <a href="team-single.html" class="text-white">Sara Lisbon </a></h5>
-                                    <span class="text-white">Graphic Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item design development">
-                        <div class="team team-overlay">
-                            <div class="team-photo">
-                                <img class="img-fluid mx-auto" src="assets/images/team/17.jpg" alt="">
-                            </div>
-                            <div class="team-description">
-                                <div class="team-info">
-                                    <h5> <a href="team-single.html" class="text-white">Sara Lisbon </a></h5>
-                                    <span class="text-white">Graphic Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item design development Design">
-                        <div class="team team-overlay">
-                            <div class="team-photo">
-                                <img class="img-fluid mx-auto" src="assets/images/team/18.jpg" alt="">
-                            </div>
-                            <div class="team-description">
-                                <div class="team-info">
-                                    <h5> <a href="team-single.html" class="text-white">Sara Lisbon </a></h5>
-                                    <span class="text-white">Graphic Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item design leadership">
-                        <div class="team team-overlay">
-                            <div class="team-photo">
-                                <img class="img-fluid mx-auto" src="assets/images/team/19.jpg" alt="">
-                            </div>
-                            <div class="team-description">
-                                <div class="team-info">
-                                    <h5> <a href="team-single.html" class="text-white">Sara Lisbon </a></h5>
-                                    <span class="text-white">Graphic Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item development">
-                        <div class="team team-overlay">
-                            <div class="team-photo">
-                                <img class="img-fluid mx-auto" src="assets/images/team/20.jpg" alt="">
-                            </div>
-                            <div class="team-description">
-                                <div class="team-info">
-                                    <h5> <a href="team-single.html" class="text-white">Sara Lisbon </a></h5>
-                                    <span class="text-white">Graphic Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item design leadership Design">
-                        <div class="team team-overlay">
-                            <div class="team-photo">
-                                <img class="img-fluid mx-auto" src="assets/images/team/21.jpg" alt="">
-                            </div>
-                            <div class="team-description">
-                                <div class="team-info">
-                                    <h5> <a href="team-single.html" class="text-white">Sara Lisbon </a></h5>
-                                    <span class="text-white">Graphic Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item design development">
-                        <div class="team team-overlay">
-                            <div class="team-photo">
-                                <img class="img-fluid mx-auto" src="assets/images/team/22.jpg" alt="">
-                            </div>
-                            <div class="team-description">
-                                <div class="team-info">
-                                    <h5> <a href="team-single.html" class="text-white">Sara Lisbon </a></h5>
-                                    <span class="text-white">Graphic Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item leadership Design">
-                        <div class="team team-overlay">
-                            <div class="team-photo">
-                                <img class="img-fluid mx-auto" src="assets/images/team/23.jpg" alt="">
-                            </div>
-                            <div class="team-description">
-                                <div class="team-info">
-                                    <h5> <a href="team-single.html" class="text-white">Sara Lisbon </a></h5>
-                                    <span class="text-white">Graphic Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item design development">
-                        <div class="team team-overlay">
-                            <div class="team-photo">
-                                <img class="img-fluid mx-auto" src="assets/images/team/24.jpg" alt="">
-                            </div>
-                            <div class="team-description">
-                                <div class="team-info">
-                                    <h5> <a href="team-single.html" class="text-white">Sara Lisbon </a></h5>
-                                    <span class="text-white">Graphic Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="text-center">
-                    <a type="button" class="button button-border  icon mb-10 mr-10 mt-lg-5 mt-3" href="">
-                        Voir plus ... » </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--=================================
-    team  -->
+@include("parties.team")
 
 
 <!--=================================why-choose-us -->
@@ -759,23 +568,23 @@
                         </div>
                         <div class="entry-share clearfix">
                             <div class="entry-button">
-                                <a class="button arrow" href="#">Read More<i class="fa fa-angle-right"
+                                <a class="button arrow" href="#">Voir plus<i class="fa fa-angle-right"
                                         aria-hidden="true"></i></a>
                             </div>
                             <div class="social list-style-none float-end">
-                                <strong>Share : </strong>
+                                <strong>Partager : </strong>
                                 <ul>
                                     <li>
-                                        <a href="#"> <i class="fa fa-facebook"></i> </a>
+                                        <a href="#"> <i class="fab fa-facebook"></i> </a>
                                     </li>
                                     <li>
-                                        <a href="#"> <i class="fa fa-twitter"></i> </a>
+                                        <a href="#"> <i class="fab fa-x"></i> </a>
                                     </li>
                                     <li>
-                                        <a href="#"> <i class="fa fa-pinterest-p"></i> </a>
+                                        <a href="#"> <i class="fab fa-instagram"></i> </a>
                                     </li>
                                     <li>
-                                        <a href="#"> <i class="fa fa-dribbble"></i> </a>
+                                        <a href="#"> <i class="fab fa-whatsapp"></i> </a>
                                     </li>
                                 </ul>
                             </div>
@@ -831,23 +640,23 @@
                         </div>
                         <div class="entry-share clearfix">
                             <div class="entry-button">
-                                <a class="button arrow" href="#">Read More<i class="fa fa-angle-right"
+                                <a class="button arrow" href="#">Voir plus<i class="fa fa-angle-right"
                                         aria-hidden="true"></i></a>
                             </div>
                             <div class="social list-style-none float-end">
-                                <strong>Share : </strong>
+                                <strong>Partager : </strong>
                                 <ul>
                                     <li>
-                                        <a href="#"> <i class="fa fa-facebook"></i> </a>
+                                        <a href="#"> <i class="fab fa-facebook"></i> </a>
                                     </li>
                                     <li>
-                                        <a href="#"> <i class="fa fa-twitter"></i> </a>
+                                        <a href="#"> <i class="fab fa-x"></i> </a>
                                     </li>
                                     <li>
-                                        <a href="#"> <i class="fa fa-pinterest-p"></i> </a>
+                                        <a href="#"> <i class="fab fa-instagram"></i> </a>
                                     </li>
                                     <li>
-                                        <a href="#"> <i class="fa fa-dribbble"></i> </a>
+                                        <a href="#"> <i class="fab fa-whatsapp"></i> </a>
                                     </li>
                                 </ul>
                             </div>
@@ -893,23 +702,23 @@
                         </div>
                         <div class="entry-share clearfix">
                             <div class="entry-button">
-                                <a class="button arrow" href="#">Read More<i class="fa fa-angle-right"
+                                <a class="button arrow" href="#">Voir plus<i class="fa fa-angle-right"
                                         aria-hidden="true"></i></a>
                             </div>
                             <div class="social list-style-none float-end">
-                                <strong>Share : </strong>
+                                <strong>Partager : </strong>
                                 <ul>
                                     <li>
-                                        <a href="#"> <i class="fa fa-facebook"></i> </a>
+                                        <a href="#"> <i class="fab fa-facebook"></i> </a>
                                     </li>
                                     <li>
-                                        <a href="#"> <i class="fa fa-twitter"></i> </a>
+                                        <a href="#"> <i class="fab fa-x"></i> </a>
                                     </li>
                                     <li>
-                                        <a href="#"> <i class="fa fa-pinterest-p"></i> </a>
+                                        <a href="#"> <i class="fab fa-instagram"></i> </a>
                                     </li>
                                     <li>
-                                        <a href="#"> <i class="fa fa-dribbble"></i> </a>
+                                        <a href="#"> <i class="fab fa-whatsapp"></i> </a>
                                     </li>
                                 </ul>
                             </div>
@@ -945,23 +754,23 @@
                         </div>
                         <div class="entry-share clearfix">
                             <div class="entry-button">
-                                <a class="button arrow" href="#">Read More<i class="fa fa-angle-right"
+                                <a class="button arrow" href="#">Voir plus<i class="fa fa-angle-right"
                                         aria-hidden="true"></i></a>
                             </div>
                             <div class="social list-style-none float-end">
-                                <strong>Share : </strong>
+                                <strong>Partager : </strong>
                                 <ul>
                                     <li>
-                                        <a href="#"> <i class="fa fa-facebook"></i> </a>
+                                        <a href="#"> <i class="fab fa-facebook"></i> </a>
                                     </li>
                                     <li>
-                                        <a href="#"> <i class="fa fa-twitter"></i> </a>
+                                        <a href="#"> <i class="fab fa-x"></i> </a>
                                     </li>
                                     <li>
-                                        <a href="#"> <i class="fa fa-pinterest-p"></i> </a>
+                                        <a href="#"> <i class="fab fa-instagram"></i> </a>
                                     </li>
                                     <li>
-                                        <a href="#"> <i class="fa fa-dribbble"></i> </a>
+                                        <a href="#"> <i class="fab fa-whatsapp"></i> </a>
                                     </li>
                                 </ul>
                             </div>
@@ -989,41 +798,7 @@
 
 <!--=================================Our Clients  -->
 
-<section class="text-white our-clients theme-bg page-section-ptb">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12">
-                <h6 class="lacks-heading d-none">Lacks Heading</h6> <!-- lacks heading for w3c -->
-                <div class="owl-carousel" data-items="5" data-sm-items="4" data-xs-items="3" data-xx-items="2">
-                    <div class="item">
-                        <img class="mx-auto img-fluid" src="assets/images/clients/light/06.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img class="mx-auto img-fluid" src="assets/images/clients/light/07.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img class="mx-auto img-fluid" src="assets/images/clients/light/08.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img class="mx-auto img-fluid" src="assets/images/clients/light/09.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img class="mx-auto img-fluid" src="assets/images/clients/light/10.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img class="mx-auto img-fluid" src="assets/images/clients/light/06.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img class="mx-auto img-fluid" src="assets/images/clients/light/08.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img class="mx-auto img-fluid" src="assets/images/clients/light/09.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 
 @endsection

@@ -23,12 +23,12 @@
                             <!-- menu links -->
                             <div class="menu-bar">
                                 <ul class="menu-links">
-                                    <li><a href="">Home</a>
+                                    <li><a href="{{ route('home') }}">Home</a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0)">A propos</a>
+                                        <a href="{{ route('about') }}">A propos</a>
                                     </li>
-                                    <li><a href="javascript:void(0)">Notre équipe</a>
+                                    <li><a href="{{ route('equipe') }}">Notre équipe</a>
                                     </li>
                                     <li>
                                         <a href="javascript:void(0)">Expertises
@@ -37,7 +37,7 @@
                                         <!-- drop down multilevel  -->
                                         <ul class="drop-down-multilevel">
                                             <li>
-                                                <a href="javascript:void(0)">Services <i
+                                                <a href="{{ route('services') }}">Services <i
                                                         class="ti-plus fa-indicator"></i>
                                                 </a>
                                                 <!-- drop down second level -->
@@ -46,7 +46,7 @@
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="javascript:void(0)">Domaine d'activités
+                                                <a href="{{ route('domaines') }}">Domaine d'activités
                                                     <i class="ti-plus fa-indicator"></i>
                                                 </a>
                                                 <!-- drop down second level -->
@@ -56,11 +56,11 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a href="javascript:void(0)">Nos projets</a>
+                                    <li><a href="{{ route('projets') }}">Nos projets</a>
                                     </li>
-                                    <li><a href="javascript:void(0)">Nos publications</a>
+                                    <li><a href="{{ route('publications') }}">Nos publications</a>
                                     </li>
-                                    <li><a href="javascript:void(0)">Contact</a>
+                                    <li><a href="{{ route('contact') }}">Contact</a>
                                     </li>
                                 </ul>
                                 {{-- <div class="search-cart">

@@ -15,31 +15,31 @@ class about extends Controller
     }
     public function about(): View
     {
-        return view('pages.home');
+        return view('pages.about');
     }
     public function team(): View
     {
-        return view('pages.home');
+        return view('pages.team');
     }
     public function services(): View
     {
-        return view('pages.home');
+        return view('pages.services');
     }
     public function domaines(): View
     {
-        return view('pages.home');
+        return view('pages.domaines');
     }
     public function projet(): View
     {
-        return view('pages.home');
+        return view('pages.projets');
     }
     public function blog(): View
     {
-        return view('pages.home');
+        return view('pages.blog');
     }
     public function contact(): View
     {
-        return view('pages.home');
+        return view('pages.contact');
     }
     public function detailTeam($slog): View
     {

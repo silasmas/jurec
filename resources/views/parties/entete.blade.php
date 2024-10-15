@@ -35,6 +35,9 @@
 <!-- Responsive -->
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/responsive.css') }} " />
 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+
 </head>
 
 <body>

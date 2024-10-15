@@ -19,9 +19,9 @@ Route::get('/',  [about::class, 'index'])->name('home');
 Route::get('about',  [about::class, 'about'])->name('about');
 Route::get('equipe',  [about::class, 'team'])->name('equipe');
 Route::get('services',  [about::class, 'services'])->name('services');
-Route::get('domaine',  [about::class, 'domaines'])->name('projets');
-Route::get('projets',  [about::class, 'projet'])->name('publications');
-Route::get('publications',  [about::class, 'blog'])->name('home');
+Route::get('domaines',  [about::class, 'domaines'])->name('domaines');
+Route::get('projets',  [about::class, 'projet'])->name('projets');
+Route::get('publications',  [about::class, 'blog'])->name(name: 'publications');
 Route::get('contact',  [about::class, 'contact'])->name('contact');
 
 Route::get('detailEquipe/{slug}',  [about::class, 'detailTeam'])->name('detailEquipe');
