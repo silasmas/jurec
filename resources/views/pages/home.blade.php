@@ -414,7 +414,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h2 class="text-uppercase text-white mb-0 text-center">We provide the best service</h2>
+                <h2 class="text-uppercase text-white mb-0 text-center">Nous offrons le meilleur service</h2>
             </div>
         </div>
     </div>
@@ -470,7 +470,7 @@
             </div>
             <div class="col-lg-12">
                 <div class="text-center">
-                    <a type="button" class="button button-border  icon mb-10 mr-10 mt-lg-5 mt-3" href="">
+                    <a type="button" class="button button-border  icon mb-10 mr-10 mt-lg-5 mt-3" href="{{ route('services') }}">
                         Voir plus ... » </a>
                 </div>
             </div>
@@ -532,12 +532,7 @@
 
     </div>
 </section>
-<!--=================================why-choose-us -->
 
-<!--=================================key-features -->
-
-<!--=================================
- Blog-->
 
 <section class="blog blog-grid-3-column white-bg page-section-ptb">
     <div class="container">
@@ -567,27 +562,7 @@
                                 adipisicing elit. </p>
                         </div>
                         <div class="entry-share clearfix">
-                            <div class="entry-button">
-                                <a class="button arrow" href="#">Voir plus<i class="fa fa-angle-right"
-                                        aria-hidden="true"></i></a>
-                            </div>
-                            <div class="social list-style-none float-end">
-                                <strong>Partager : </strong>
-                                <ul>
-                                    <li>
-                                        <a href="#"> <i class="fab fa-facebook"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fab fa-x"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fab fa-instagram"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fab fa-whatsapp"></i> </a>
-                                    </li>
-                                </ul>
-                            </div>
+                            @include('parties.partageRs')
                         </div>
                     </div>
                 </div>
@@ -639,27 +614,7 @@
                                 nostrum ipsam veniam omnis nihil! </p>
                         </div>
                         <div class="entry-share clearfix">
-                            <div class="entry-button">
-                                <a class="button arrow" href="#">Voir plus<i class="fa fa-angle-right"
-                                        aria-hidden="true"></i></a>
-                            </div>
-                            <div class="social list-style-none float-end">
-                                <strong>Partager : </strong>
-                                <ul>
-                                    <li>
-                                        <a href="#"> <i class="fab fa-facebook"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fab fa-x"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fab fa-instagram"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fab fa-whatsapp"></i> </a>
-                                    </li>
-                                </ul>
-                            </div>
+                            @include('parties.partageRs')
                         </div>
                     </div>
                 </div>
@@ -701,27 +656,7 @@
                                 laboriosam sunt hic perspiciatis, </p>
                         </div>
                         <div class="entry-share clearfix">
-                            <div class="entry-button">
-                                <a class="button arrow" href="#">Voir plus<i class="fa fa-angle-right"
-                                        aria-hidden="true"></i></a>
-                            </div>
-                            <div class="social list-style-none float-end">
-                                <strong>Partager : </strong>
-                                <ul>
-                                    <li>
-                                        <a href="#"> <i class="fab fa-facebook"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fab fa-x"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fab fa-instagram"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fab fa-whatsapp"></i> </a>
-                                    </li>
-                                </ul>
-                            </div>
+                            @include('parties.partageRs')
                         </div>
                     </div>
                 </div>
@@ -753,27 +688,7 @@
                                 mollitia excepturi voluptatibus sequi.</p>
                         </div>
                         <div class="entry-share clearfix">
-                            <div class="entry-button">
-                                <a class="button arrow" href="#">Voir plus<i class="fa fa-angle-right"
-                                        aria-hidden="true"></i></a>
-                            </div>
-                            <div class="social list-style-none float-end">
-                                <strong>Partager : </strong>
-                                <ul>
-                                    <li>
-                                        <a href="#"> <i class="fab fa-facebook"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fab fa-x"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fab fa-instagram"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fab fa-whatsapp"></i> </a>
-                                    </li>
-                                </ul>
-                            </div>
+                            @include('parties.partageRs')
                         </div>
                     </div>
                 </div>
@@ -781,24 +696,10 @@
 
             <div class="col-lg-12">
                 <div class="text-center">
-                    <a type="button" class="button button-border icon mb-10 mr-10 mt-lg-5 mt-3" href="">
+                    <a type="button" class="button button-border icon mb-10 mr-10 mt-lg-5 mt-3" href="{{ route('publications') }}">
                         Voir plus ... » </a>
                 </div>
             </div>
         </div>
-        <!-- ================================================ -->
-
 </section>
-
-<!--=================================
-   Blog-->
-
-
-<!--=================================key-features -->
-
-<!--=================================Our Clients  -->
-
-
-
-
 @endsection

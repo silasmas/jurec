@@ -4,13 +4,16 @@
       <div class="row">
         <div class="col-lg-12">
         <div class="page-title-name">
-            <h1>About us 02</h1>
-            <p>We know the secret of your success</p>
+            <h1>{{ $title['titre'] }}</h1>
+            <p>{{ $title['titre'] }}</p>
           </div>
             <ul class="page-breadcrumb">
-              <li><a href="#"><i class="fa fa-home"></i> Home</a> <i class="fa fa-angle-double-right"></i></li>
-              <li><a href="#">page</a> <i class="fa fa-angle-double-right"></i></li>
-              <li><span>About us 02</span> </li>
+              <li><a href="{{ route($title['Pretour']) }}"><i class="fa fa-home"></i> {{ $title['PretourT'] }}</a> <i class="fa fa-angle-double-right"></i></li>
+              @isset($title['t3'])
+              <li><a href="{{ route($title['retourT3']) }}">{{ $title['t3'] }}</a> <i class="fa fa-angle-double-right"></i></li>
+
+                @endisset
+              <li><span>{{ $title['t2'] }}</span> </li>
          </ul>
        </div>
        </div>

@@ -180,7 +180,7 @@
             </div>
             <div class="col-lg-12">
                 <div class="text-center">
-                    <a type="button" class="button button-border  icon mb-10 mr-10 mt-lg-5 mt-3" href="">
+                    <a type="button" class="button button-border  icon mb-10 mr-10 mt-lg-5 mt-3" href="{{ route('equipe') }}">
                         Voir plus ... » </a>
                 </div>
             </div>
