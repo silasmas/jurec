@@ -428,45 +428,23 @@
         <div class="row">
             <div class="owl-carousel" data-nav-dots="true" data-items="3" data-md-items="3" data-sm-items="3"
                 data-xs-items="2" data-xx-items="1" data-space="20">
+                @forelse ($menuService as $s)
                 <div class="item">
                     <div class="col-lg-12 col-md-12 col-sm-12 mb-30">
                         <div class="card border-0  box-content o-hidden h-100">
-                            <img class="img-fluid" src="assets/images/about/02.jpg" alt="">
+                            <img class="img-fluid" src="{{ asset('storage/'.$s->couverture) }}" alt="">
                             <div class="p-4">
-                                <h4 class="fw-5"><a href="#" class="text-black"> Does your life lack</a></h4>
-                                <p class="mb-0 pb-0 text-black">There are basically six key areas to higher achievement.
-                                    Some people will tell you there are four there are eight.they all originate from the
-                                    same roots.</p>
+                                <h4 class="fw-5"><a href="{{ route('detailService',['slug'=> $s->slug]) }}" class="text-black">{{ $s->titre }}</a></h4>
+                                <p class="mb-0 pb-0 text-black">
+                                {!! Str::limit($s->description, 100, '...') !!}    
+                                </p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="col-lg-12 col-md-12 col-sm-12 mb-30">
-                        <div class="card border-0  box-content o-hidden h-100">
-                            <img class="img-fluid" src="assets/images/about/03.jpg" alt="">
-                            <div class="p-4">
-                                <h4 class="fw-5"><a href="#" class="text-black"> Supercharge your </a></h4>
-                                <p class="mb-0 pb-0 text-black">There are basically six key areas to higher achievement.
-                                    Some people will tell you there are four there are eight.they all originate from the
-                                    same roots.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="col-lg-12 col-md-12 col-sm-12 mb-30">
-                        <div class="card border-0  box-content o-hidden h-100">
-                            <img class="img-fluid" src="assets/images/about/01.jpg" alt="">
-                            <div class="p-4">
-                                <h4 class="fw-5"><a href="#" class="text-black"> Helen keller a teller</a></h4>
-                                <p class="mb-0 pb-0 text-black">There are basically six key areas to higher achievement.
-                                    Some people will tell you there are four there are eight.they all originate from the
-                                    same roots.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </div>                    
+                @empty
+                    
+                @endforelse
             </div>
             <div class="col-lg-12">
                 <div class="text-center">
@@ -484,7 +462,6 @@
 @include("parties.team")
 
 
-<!--=================================why-choose-us -->
 
 <section class="page-section-ptb bg-overlay-black-80 jarallax" data-speed="0.6" data-img-src="assets/images/bg/06.jpg">
     <div class="container">
@@ -537,7 +514,7 @@
 <section class="blog blog-grid-3-column white-bg page-section-ptb">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-4">
+            {{-- <div class="col-lg-4 col-md-4">
                 <div class="blog-entry mb-50">
                     <div class="entry-image clearfix">
                         <img class="img-fluid" src="assets/images/blog/01.jpg" alt="">
@@ -618,50 +595,57 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
+            </div> --}}
+            @forelse ($articles as $p)
             <div class="col-lg-4 col-md-4">
                 <div class="blog-entry mb-50">
                     <div class="entry-image clearfix">
+                        @if(count($p->couverture) >1)
                         <div class="owl-carousel bottom-center-dots" data-nav-dots="ture" data-items="1"
                             data-md-items="1" data-sm-items="1" data-xs-items="1" data-xx-items="1">
+                            @forelse ($p->couverture as $img)
                             <div class="item">
-                                <img class="img-fluid" src="assets/images/blog/02.jpg" alt="">
+                                <img class="img-fluid" src="{{ asset('storage/'.$img) }}" alt="">
                             </div>
-                            <div class="item">
-                                <img class="img-fluid" src="assets/images/blog/03.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="img-fluid" src="assets/images/blog/04.jpg" alt="">
-                            </div>
+
+                            @empty
+
+                            @endforelse
                         </div>
+                        @else
+                        <img class="img-fluid" src="{{ asset('storage/'.$p->couverture[0]) }}" alt="">
+                        @endif
                     </div>
                     <div class="blog-detail">
                         <div class="entry-title mb-10">
-                            <a href="#">Blogpost With slider</a>
+                            <a href="#">{{ $p->titre }}</a>
                         </div>
                         <div class="entry-meta mb-10">
                             <ul>
-                                <li> <i class="fa fa-folder-open-o"></i> <a href="#"> Design,</a> <a href="#"> HTML5
-                                    </a> </li>
-                                <li><a href="#"><i class="fa fa-comment-o"></i> 5</a></li>
-                                <li><a href="#"><i class="fa fa-calendar-o"></i> 12 Aug 2021</a></li>
+                                <li> <i class="fa fa-folder-open-o"></i> 
+                                    <a href="#">{{ $p->domaine->nom}} </a> </li>
+                                <li><a href="#"><i class="fa fa-calendar-o"></i>{{ $p->created_at->diffForHumans() }}</a></li>
                             </ul>
                         </div>
                         <div class="entry-content">
-                            <p>Asperiores mollitia excepturi voluptatibus sequi nostrum ipsam veniam omnis nihil! A
-                                ea maiores corporis. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. consectetur,
-                                assumenda provident lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
-                                laboriosam sunt hic perspiciatis, </p>
+                            <p>
+                                {!! Str::limit($p->description, 100, '...') !!} 
+                            </p>
                         </div>
                         <div class="entry-share clearfix">
+                            <div class="entry-button">
+                                <a class="button arrow" href="{{ route('detailBlog',['slug'=>$p->slug]) }}">Voir plus<i class="fa fa-angle-right"
+                                        aria-hidden="true"></i></a>
+                            </div>
                             @include('parties.partageRs')
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-4">
+            </div>                
+            @empty
+                
+            @endforelse
+            {{-- <div class="col-lg-4 col-md-4">
                 <div class="blog-entry mb-50">
                     <div class="blog-entry-you-tube">
                         <div class="js-video [youtube, widescreen]">
@@ -692,7 +676,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
             <div class="col-lg-12">
                 <div class="text-center">
