@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\team;
+use App\Models\about;
 use App\Models\projet;
 use App\Models\article;
 use App\Models\service;
@@ -44,6 +45,7 @@ class ViewServiceProvider extends ServiceProvider
             $menuDomaine = thematique::where('is_active', true)->get();
             $projets = projet::where('is_active', true)->get();
             $articles = article::where('is_active', true)->get();
+            $about = about::first();
 
             $recentProjets = projet::orderBy('created_at', 'desc')->take(5)->where('is_active', true)->get();
             $recentArticles = article::orderBy('created_at', 'desc')->take(5)->where('is_active', true)->get();
@@ -64,6 +66,7 @@ class ViewServiceProvider extends ServiceProvider
             $view->with('recentProjets', $recentProjets);
             $view->with('recentArticles', $recentArticles);
             $view->with('articles', $articles);
+            $view->with('about', $about);
         });
     }
 }

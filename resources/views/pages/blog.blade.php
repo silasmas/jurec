@@ -29,8 +29,7 @@
                                         @forelse($a->couverture as $value)
                                         <div class="item">
                                             <img class="img-fluid" src="{{ asset('storage/'.$value) }}" alt="">
-                                        </div>
-                                            
+                                        </div>                                            
                                         @empty
                                             
                                         @endforelse

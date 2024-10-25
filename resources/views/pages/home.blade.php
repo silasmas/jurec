@@ -329,35 +329,26 @@
                 <div class="who-we-are-left">
                     <div class="owl-carousel" data-nav-dots="true" data-items="1" data-md-items="1" data-sm-items="1"
                         data-xs-items="1" data-xx-items="1">
+                        @forelse ($about->couverture as $ab)
                         <div class="item"><img class="img-fluid full-width"
-                                src="{{ asset('assets/images/about/01.jpg') }}" alt="">
-                        </div>
-                        <div class="item"><img class="img-fluid full-width"
-                                src="{{ asset('assets/images/about/02.jpg') }}" alt="">
-                        </div>
-                        <div class="item"><img class="img-fluid full-width"
-                                src="{{ asset('assets/images/about/03.jpg') }}" alt="">
-                        </div>
+                                src="{{ asset('storage/'.$ab) }}" alt="">
+                        </div>                            
+                        @empty
+                            
+                        @endforelse
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 sm-mt-30">
                 <div class="section-title">
-                    <h6>Qui nous sommes et ce que nous faisons</h6>
+                    <h6>{{$about->titre}}</h6>
                     <h2 class="title-effect">Apprenez à mieux nous connaître.</h2>
-                    <p>JUREC conseil est une organisation de droit congolais (RDC), spécialisée sur les questions
-                        juridiques de protection de l’environnement et la bonne gouvernance des ressources naturelles.
+                    <p>
+                        {{$about->resume}}
                     </p>
                 </div>
-                <p>Nous offrons un accompagnement juridique et judiciaire aux Communautés Locales et Peuples Autochtones
-                    riveraines
-                    des ressources naturelles. </p>
-                {{-- <span class="theme-color" data-bs-toggle="tooltip" data-bs-placement="top"
-                    title="HTML5 template">Webster</span>
-                conseqt quibusdam, enim expedita sed quia nesciunt. Vero quod conseqt quibusdam, enim expedita sed quia
-                nesciunt incidunt
-                accusamus necessitatibus</p> --}}
-                <div class="row mt-30">
+                <p> </p>
+                {{-- <div class="row mt-30">
                     <div class="col-md-6">
                         <ul class="list list-unstyled list-hand">
                             <li> Award-winning design</li>
@@ -370,10 +361,10 @@
                             <li> Powerful Performance </li>
                         </ul>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
-        <div class="row">
+        {{-- <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="feature-text left-icon mt-50 xs-mt-20">
                     <div class="feature-icon">
@@ -407,7 +398,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 </section>
 <section class="our-clients theme-bg text-white page-section-ptb position-relative">
