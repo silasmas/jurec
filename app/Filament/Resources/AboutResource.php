@@ -95,6 +95,7 @@ class AboutResource extends Resource
                 TextColumn::make('titre')
                     ->searchable(),
                 TextColumn::make('resume')
+                    ->limit(30)
                     ->searchable(),
                 TextColumn::make('created_at')
                     ->dateTime()
