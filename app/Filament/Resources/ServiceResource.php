@@ -4,7 +4,7 @@ namespace App\Filament\Resources;
 
 use Filament\Forms;
 use Filament\Tables;
-use App\Models\pervice;
+use App\Models\service;
 use Filament\Forms\Set;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
