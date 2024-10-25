@@ -1,11 +1,11 @@
 
-<section class="page-title bg-overlay-black-60 jarallax" data-speed="0.6" data-img-src="assets/images/bg/02.jpg">
+<section class="page-title bg-overlay-black-60 jarallax" data-speed="0.6" data-img-src="../assets/images/bg/cover5.jpg">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
         <div class="page-title-name">
             <h1>{{ $title['titre'] }}</h1>
-            <p>{{ $title['titre'] }}</p>
+            {{-- <p>{{ $title['titre'] }}</p> --}}
           </div>
             <ul class="page-breadcrumb">
               <li><a href="{{ route($title['Pretour']) }}"><i class="fa fa-home"></i> {{ $title['PretourT'] }}</a> <i class="fa fa-angle-double-right"></i></li>

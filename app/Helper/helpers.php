@@ -8,6 +8,16 @@ if (!function_exists('format_date')) {
         return \Carbon\Carbon::parse($date)->format('d/m/Y');
     }
 }
+if (!function_exists('bySlug')) {
+    function bySlug($slug, $table)
+    {
+        // Vérifie si le modèle est une instance d'Eloquent
+        // if (!is_subclass_of($table, IlluminateDatabaseEloquentModel::class)) {
+        //     throw new InvalidArgumentException("Le paramètre doit être un modèle Eloquent.");
+        // }
+        return $table::where([['slug', $slug], ['is_active', true]])->first();
+    }
+}
 
 if (!function_exists('getTitle')) {
     function getTitle($name)
@@ -41,14 +51,17 @@ if (!function_exists('getTitle')) {
             case 'detailTeam':
                 return $titre = ['titre' => "Activité", 't2' => "Detail de l'activité", 'Pretour' => "home", 'PretourT' => "Accueil", 't3' => "Activités", 'retourT3' => "activites"];
                 break;
-            case 'detaildomaine':
-                return $titre = ['titre' => "Archives", 't2' => "Detail de l'archive", 'Pretour' => "home", 'PretourT' => "Accueil", 't3' => "Archives", 'retourT3' => "archives"];
+            case 'detailDomaine':
+                return $titre = ['titre' => "Detail du domaine d'expertise", 't2' => "Detail du domaine d'expertise", 'Pretour' => "home", 'PretourT' => "Accueil", 't3' => "domaines", 'retourT3' => "domaines"];
                 break;
-            case 'detailprojet':
-                return $titre = ['titre' => "Archives", 't2' => "Detail de l'archive", 'Pretour' => "home", 'PretourT' => "Accueil", 't3' => "Archives", 'retourT3' => "archives"];
+            case 'detailProjet':
+                return $titre = ['titre' => "Detail du projet", 't2' => "Detail du projet", 'Pretour' => "home", 'PretourT' => "Accueil", 't3' => "projets", 'retourT3' => "projets"];
                 break;
-            case 'detailpublication':
-                return $titre = ['titre' => "Archives", 't2' => "Detail de l'archive", 'Pretour' => "home", 'PretourT' => "Accueil", 't3' => "Archives", 'retourT3' => "archives"];
+            case 'detailBlog':
+                return $titre = ['titre' => "Detail de la publication", 't2' => "Detail de la publication", 'Pretour' => "home", 'PretourT' => "Accueil", 't3' => "publications", 'retourT3' => "publications"];
+                break;
+            case 'detailService':
+                return $titre = ['titre' => "Detail du service", 't2' => "Detail du service", 'Pretour' => "home", 'PretourT' => "Accueil", 't3' => "services", 'retourT3' => "services"];
                 break;
 
             default:

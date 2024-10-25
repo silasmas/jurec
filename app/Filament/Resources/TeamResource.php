@@ -3,10 +3,11 @@
 namespace App\Filament\Resources;
 
 use Filament\Forms;
+use App\Models\Team;
 use Filament\Tables;
+use Filament\Forms\Get;
 use Filament\Forms\Set;
 use Filament\Forms\Form;
-use App\Models\Thematique;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
 use Filament\Resources\Resource;
@@ -14,6 +15,7 @@ use Filament\Forms\Components\Group;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Components\Section;
+use Filament\Forms\Components\Textarea;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
@@ -21,49 +23,55 @@ use Filament\Tables\Columns\ImageColumn;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
 use Illuminate\Database\Eloquent\Builder;
+use App\Filament\Resources\TeamResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Resources\ThematiqueResource\Pages;
-use App\Filament\Resources\ThematiqueResource\RelationManagers;
+use App\Filament\Resources\TeamResource\RelationManagers;
 
-class ThematiqueResource extends Resource
+class TeamResource extends Resource
 {
-    protected static ?string $model = Thematique::class;
+    protected static ?string $model = Team::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-    protected static ?string $navigationLabel = "Domaine d'activités";
-    protected static ?int $navigationSort = 4;
+    protected static ?string $navigationLabel = 'Equipe';
+    protected static ?int $navigationSort = 5;
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
                 Group::make([
-                    Section::make('Info sur le projet')->schema([
-                        Select::make('categorie_id')
-                            ->label(label: 'Catégorie')
-                            ->searchable()
-                            ->columnSpan(6)
-                            ->preload()
+                    Section::make('Info sur l\'equipe')->schema([
+                        TextInput::make('nom')
                             ->required()
-                            ->relationship('categorie', 'nom'),
-                        TextInput::make('titre')
+                            ->columnSpan(4)
+                            ->maxLength(255),
+                        TextInput::make('prennom')
                             ->required()
-                            ->columnSpan(6)
+                            ->columnSpan(4)
                             ->maxLength(255)
                             ->live(onBlur: true)
-                            ->afterStateUpdated(fn(string $operation, $state, Set $set) =>
-                            $operation === 'create' || $operation === 'edit' ? $set('slug', Str::slug($state)) : null),
+                            ->afterStateUpdated(fn(string $operation, $state, Set $set, Get $get) =>
+                            $operation === 'create' || $operation === 'edit' ? $set('slug', Str::slug($state . $get('nom'))) : null),
                         TextInput::make('slug')
-                            ->columnSpan(6)
+                            ->required()
+                            ->columnSpan(4)
                             ->disabled()
                             ->dehydrated()
                             ->required()
                             ->maxLength(255)
-                            ->unique(thematique::class, 'slug', ignoreRecord: true),
-                        TextInput::make('resume')
-                            ->columnSpan(6)
+                            ->unique(team::class, 'slug', ignoreRecord: true),
+                        TextInput::make('poste')
                             ->required()
+                            ->columnSpan(6)
                             ->maxLength(255),
-                        RichEditor::make('description')
+                        Select::make(name: 'sexe')
+                            ->options([
+                                'Homme' => 'Homme',
+                                'Femme' => 'Femme',
+                            ])
+                            ->label("Sexe")
+                            ->searchable()->columnSpan(6),
+
+                        RichEditor::make('biographie')
                             ->toolbarButtons([
                                 'attachFiles',
                                 'blockquote',
@@ -80,66 +88,71 @@ class ThematiqueResource extends Resource
                                 'underline',
                                 'undo',
                             ])
-                            ->columnSpanFull(),
-                        FileUpload::make('couverture')
+                            ->columnSpan(12),
+                        Toggle::make('is_active')
+                            ->label('Active (pour qu\'il soit afficher ou pas)')
                             ->columnSpan(12)
-                            ->directory('couverturethematique')
+                            ->onColor('success')
+                            ->offColor('danger')
+                            ->required(),
+                    ])
+                ])->columnSpan(2),
+                Group::make([
+                    Section::make('Profil')->schema([
+                        FileUpload::make('profil')
+                            ->directory('profil')
+                            ->label("Photo de profil")
                             ->imageEditor()
-                            ->multiple()
                             ->imageEditorMode(2)
                             ->downloadable()
                             ->visibility('private')
                             ->image()
-                            // ->maxSize(3024)
-                            ->previewable(true),
-                        // FileUpload::make('images')
-                        //     ->columnSpan(6)
-                        //     ->directory('thematiqueImages')
-                        //     ->imageEditor()
-                        //     ->multiple()
-                        //     ->maxFiles(5)
-                        //     ->imageEditorMode(2)
-                        //     ->downloadable()
-                        //     ->visibility('private')
-                        //     ->image()
-                        //     ->maxSize(2024)
-                        //     ->previewable(true),
-                        Toggle::make('is_active')
-                            ->label('Active (pour le rendre visible ou pas)')
-                            ->columnSpanFull()
-                            ->onColor('success')
-                            ->offColor('danger')
-                            ->required(),
-                    ])->columnS(12)
-                ])->columnSpanFull(),
-            ]);
+                            ->maxSize(2024)
+                            ->previewable(true)
+                            ->reorderable(),
+                    ]),
+                    Section::make('Réseaux sociaux')->schema([
+                        TextInput::make('fb')
+                            ->columnSpan(4)
+                            ->maxLength(255),
+                        TextInput::make('youtube')
+                            ->columnSpan(4)
+                            ->maxLength(255),
+                        TextInput::make('x')
+                            ->columnSpan(4)
+                            ->maxLength(255),
+                        TextInput::make('instagram')
+                            ->columnSpan(4)
+                            ->maxLength(255),
+
+                    ]),
+                ])->columnSpan(1),
+            ])->columns(3);
     }
 
     public static function table(Table $table): Table
     {
         return $table
             ->columns([
-                ImageColumn::make('couverture'),
-                TextColumn::make('categorie.nom')
-                    ->label('Catégorie')
-                    ->sortable(),
-                TextColumn::make('titre')
-                    ->label('Titre')
+                ImageColumn::make('profil')
+                    ->circular()
+                    ->searchable(),
+                TextColumn::make('nom')
+                    ->searchable(),
+                TextColumn::make('prennom')
                     ->searchable(),
                 TextColumn::make('slug')
                     ->searchable(),
-                TextColumn::make('resume')
-                    ->label('Résumer')
-                    ->limit(50)
+                TextColumn::make('sexe')
                     ->searchable(),
                 IconColumn::make('is_active')
                     ->label('Est active')
                     ->boolean(),
-                Tables\Columns\TextColumn::make('created_at')
+                TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('updated_at')
+                TextColumn::make('updated_at')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
@@ -169,18 +182,17 @@ class ThematiqueResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListThematiques::route('/'),
-            'create' => Pages\CreateThematique::route('/create'),
-            'edit' => Pages\EditThematique::route('/{record}/edit'),
+            'index' => Pages\ListTeams::route('/'),
+            'create' => Pages\CreateTeam::route('/create'),
+            'edit' => Pages\EditTeam::route('/{record}/edit'),
         ];
     }
-
     public static function getNavigationBadge(): ?string
     {
         return static::getModel()::count();
     }
     public static function getNavigationBadgeColor(): string|array|null
     {
-        return static::getModel()::count() < 1 ? "danger" : "info";
+        return static::getModel()::count() < 1 ? "danger" : "warning";
     }
 }

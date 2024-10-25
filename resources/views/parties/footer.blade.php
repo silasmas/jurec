@@ -6,28 +6,28 @@
                 <h6 class="lacks-heading d-none">Lacks Heading</h6> <!-- lacks heading for w3c -->
                 <div class="owl-carousel" data-items="5" data-sm-items="4" data-xs-items="3" data-xx-items="2">
                     <div class="item">
-                        <img class="mx-auto img-fluid" src="assets/images/clients/light/06.png" alt="">
+                        <img class="mx-auto img-fluid" src="../assets/images/clients/light/06.png" alt="">
                     </div>
                     <div class="item">
-                        <img class="mx-auto img-fluid" src="assets/images/clients/light/07.png" alt="">
+                        <img class="mx-auto img-fluid" src="../assets/images/clients/light/07.png" alt="">
                     </div>
                     <div class="item">
-                        <img class="mx-auto img-fluid" src="assets/images/clients/light/08.png" alt="">
+                        <img class="mx-auto img-fluid" src="../assets/images/clients/light/08.png" alt="">
                     </div>
                     <div class="item">
-                        <img class="mx-auto img-fluid" src="assets/images/clients/light/09.png" alt="">
+                        <img class="mx-auto img-fluid" src="../assets/images/clients/light/09.png" alt="">
                     </div>
                     <div class="item">
-                        <img class="mx-auto img-fluid" src="assets/images/clients/light/10.png" alt="">
+                        <img class="mx-auto img-fluid" src="../assets/images/clients/light/10.png" alt="">
                     </div>
                     <div class="item">
-                        <img class="mx-auto img-fluid" src="assets/images/clients/light/06.png" alt="">
+                        <img class="mx-auto img-fluid" src="../assets/images/clients/light/06.png" alt="">
                     </div>
                     <div class="item">
-                        <img class="mx-auto img-fluid" src="assets/images/clients/light/08.png" alt="">
+                        <img class="mx-auto img-fluid" src="../assets/images/clients/light/08.png" alt="">
                     </div>
                     <div class="item">
-                        <img class="mx-auto img-fluid" src="assets/images/clients/light/09.png" alt="">
+                        <img class="mx-auto img-fluid" src="../assets/images/clients/light/09.png" alt="">
                     </div>
                 </div>
             </div>
@@ -58,7 +58,7 @@
                         </div>
                         <div class="contact-info">
                             <div class="text-center">
-                                <h5 class="mt-10 mb-10">+(704) 279-1249</h5>
+                                <h5 class="mt-10 mb-10">{{ $setting->support_phone }}</h5>
                                 <span>Mon-Fri 8:30am-6:30pm</span>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                         </div>
                         <div class="contact-info">
                             <div class="text-center">
-                                <h5 class="mt-10 mb-10"> letstalk@webster.com</h5>
+                                <h5 class="mt-10 mb-10">{{ $setting->support_email}}</h5>
                                 <span>24 X 7 online support</span>
                             </div>
                         </div>
@@ -81,25 +81,26 @@
         </div>
         <div class="row top">
             <div class="col-lg-6 col-md-6">
-                <img class="img-fluid" id="logo-footer" src="{{ asset('assets/images/3.png') }}" alt="">
+                <img class="img-fluid" id="logo-footer" src="{{ asset('storage/'.$setting->site_logo) }}" alt="">
             </div>
 
             <div class="col-lg-6 col-md-6">
                 <div class="social text-start sm-mt-0 text-md-end xs-mt-20">
                     <ul>
-                        <li>
-                            <a href="#"> <i class="fab fa-facebook"></i> </a>
+                        
+                        <li {{ $settings['facebook']==null?'hidden':$settings['facebook'] }}>
+                            <a href="{{ $settings['facebook'] }}" target="blank"> <i class="fab fa-facebook"></i> </a>
                         </li>
-                        <li>
-                            <a href="#"> <i class="fab fa-x"></i> </a>
-                        </li>
-
-                        <li>
-                            <a href="#"> <i class="fab fa-instagram"></i> </a>
+                        <li {{ $settings['x_twitter']==null?'hidden':$settings['x_twitter'] }}>
+                            <a href="{{ $settings['x_twitter'] }}" target="blank"> <i class="fab fa-x"></i> </a>
                         </li>
 
-                        <li>
-                            <a href="#"> <i class="fab fa-youtube"></i> </a>
+                        <li {{ $settings['instagram']==null?'hidden':$settings['instagram'] }}>
+                            <a href="{{ $settings['instagram'] }}" target="blank"> <i class="fab fa-instagram"></i> </a>
+                        </li>
+
+                        <li {{ $settings['youtube']==null?'hidden':$settings['youtube'] }}>
+                            <a href="{{ $settings['youtube'] }}" target="blank"> <i class="fab fa-youtube"></i> </a>
                         </li>
                     </ul>
                 </div>
@@ -117,7 +118,7 @@
                 <div class="about-content">
                     <h6 class="mb-20 text-uppercase">A propos</h6>
                     <p>
-                        Appuyer la mise en œuvre des actions de monitoring et de plaidoyer pour une application efficace et efficiente du cadre normatif de gouvernance des ressources naturelles
+                        {{ $setting->site_description }}
                     </p>
                 </div>
             </div>

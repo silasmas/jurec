@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\projet;
+use App\Models\article;
+use App\Models\service;
 use Illuminate\View\View;
+use App\Models\thematique;
 use Illuminate\Http\Request;
 
 class about extends Controller
@@ -23,6 +27,7 @@ class about extends Controller
     }
     public function services(): View
     {
+
         return view('pages.services');
     }
     public function domaines(): View
@@ -45,21 +50,40 @@ class about extends Controller
     {
         return view('pages.home');
     }
-    public function detailService($slog): View
+    public function detailService($slug): View
     {
-        return view('pages.home');
+
+        $service = bySlug($slug, service::class);
+        return view('pages.detailService', compact("service"));
     }
-    public function detailDomaine($slog): View
+    public function detailDomaine($slug): View
     {
-        return view('pages.home');
+        $domaine = bySlug($slug, thematique::class);
+        return view('pages.detailDomaine', compact("domaine"));
     }
-    public function detailProjet($slog): View
+    public function detailProjet($slug): View
     {
-        return view('pages.home');
+        $projet = bySlug($slug, projet::class);
+        $avant = projet::where('id', '<', $projet->id)
+            ->orderBy('id', 'desc')
+            ->first();
+
+        $apres = projet::where('id', '>', $projet->id)
+            ->orderBy('id', 'asc')
+            ->first();
+        return view('pages.detailProjet', compact('projet', 'avant', 'apres'));
     }
-    public function detailBlog($slog): View
+    public function detailBlog($slug): View
     {
-        return view('pages.home');
+        $article = bySlug($slug, article::class);
+        $avant = article::where('id', '<', $article->id)
+            ->orderBy('id', 'desc')
+            ->first();
+
+        $apres = article::where('id', '>', $article->id)
+            ->orderBy('id', 'asc')
+            ->first();
+        return view('pages.detailArticle', compact('article', 'avant', 'apres'));
     }
     public function edit(Request $request): View
     {

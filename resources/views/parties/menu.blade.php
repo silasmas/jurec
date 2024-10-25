@@ -16,7 +16,7 @@
                                 <li>
                                     <a href="#">
                                         <img id="logo_img" height="200" width="200"
-                                            src="{{ asset('assets/images/3.png') }}" alt="logo">
+                                            src="{{ asset('storage/'.$setting->site_logo) }}" alt="logo">
                                     </a>
                                 </li>
                             </ul>
@@ -42,7 +42,11 @@
                                                 </a>
                                                 <!-- drop down second level -->
                                                 <ul class="drop-down-multilevel">
-                                                    <li><a href="">left sidebar</a></li>
+                                                    @forelse ($menuService as $s)
+                                                    <li><a href="{{ route("detailService",['slug' => $s->slug]) }}">{{ $s->titre }}</a></li>                                                        
+                                                    @empty
+                                                        
+                                                    @endforelse
                                                 </ul>
                                             </li>
                                             <li>
@@ -51,7 +55,11 @@
                                                 </a>
                                                 <!-- drop down second level -->
                                                 <ul class="drop-down-multilevel">
-                                                    <li><a href="blog-grid-2-column.html"> 2 column </a> </li>
+                                                    @forelse ($menuDomaine as $s)
+                                                    <li><a href="{{ route("detailDomaine",['slug' => $s->slug]) }}">{{ $s->titre }}</a></li>                                                        
+                                                    @empty
+                                                        
+                                                    @endforelse
                                                 </ul>
                                             </li>
                                         </ul>

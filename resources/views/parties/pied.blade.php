@@ -12,7 +12,7 @@
 
 <!-- plugin_path -->
 <script>
-    var plugin_path = 'assets/js/';
+    var plugin_path = '../assets/js/';
 </script>
 
 <!-- REVOLUTION JS FILES -->

@@ -20,43 +20,22 @@
 <section class="mb-80">
     <div class="container">
       <div class="row">
+        @forelse ($menuDomaine as $domaine)
         <div class="col-lg-3 col-md-6 col-sm-12 sm-mb-30">
           <div class="card border-0 theme-bg o-hidden h-100">
-            <img class="img-fluid" src="assets/images/about/02.jpg" alt="">
+            <div class="badge bg-success">
+                <a href="">{{$domaine->categorie->nom}}</a>
+            </div>
+            <img class="img-fluid" src="{{ asset('storage/'.$domaine->couverture[0]) }}" alt="">
             <div class="p-4">
-              <h4> <a href="#" class="text-white"> Does your life lack meaning</a></h4>
-              <p class="mb-0 pb-0 text-white">I truly believe Augustine’s words are true.</p>
+              <h4> <a href="{{ route("detailDomaine",['slug' => $domaine->slug]) }}" class="text-white">{{ $domaine->titre }}</a></h4>
+              <p class="mb-0 pb-0 text-white">{{  $domaine->resume  }}</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 sm-mb-30">
-          <div class="card border-0 theme-bg o-hidden h-100">
-            <img class="img-fluid" src="assets/images/about/03.jpg" alt="">
-            <div class="p-4">
-            <h4> <a href="#" class="text-white"> Supercharge your motivation</a></h4>
-            <p class="mb-0 pb-0 text-white">We also know those epic stories, those modern-day.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 xs-mb-30">
-          <div class="card border-0 theme-bg o-hidden h-100">
-            <img class="img-fluid" src="assets/images/about/01.jpg" alt="">
-            <div class="p-4">
-              <h4> <a href="#" class="text-white">  Helen keller a teller & a seller </a></h4>
-              <p class="mb-0 pb-0 text-white">Let's make something great together</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class="card border-0 theme-bg o-hidden h-100">
-            <img class="img-fluid" src="assets/images/blog/big/03.jpg" alt="">
-            <div class="p-4">
-              <h4> <a href="#" class="text-white">  Seo Analysis & Design </a></h4>
-              <p class="mb-0 pb-0 text-white">Save Yourself Time By Using Webster</p>
-            </div>
-          </div>
-        </div>
-      </div>
+        @empty
+
+        @endforelse
     </div>
   </section>
 
@@ -68,6 +47,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
+
           <img class="img-fluid mx-auto" src="assets/images/about/04.jpg" alt="">
         </div>
         <div class="col-lg-6 sm-mt-50 align-self-center">

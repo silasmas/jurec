@@ -22,7 +22,8 @@ class UserResource extends Resource
     protected static ?string $model = User::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-user';
-
+    protected static ?string $navigationLabel = 'Agents';
+    protected static ?int $navigationSort = 6;
     public static function form(Form $form): Form
     {
         return $form
@@ -101,5 +102,14 @@ class UserResource extends Resource
             // 'create' => Pages\CreateUser::route('/create'),
             // 'edit' => Pages\EditUser::route('/{record}/edit'),
         ];
+    }
+
+    public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
+    }
+    public static function getNavigationBadgeColor(): string|array|null
+    {
+        return static::getModel()::count() <1 ? "danger" : "success";
     }
 }
