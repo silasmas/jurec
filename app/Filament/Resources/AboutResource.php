@@ -4,7 +4,7 @@ namespace App\Filament\Resources;
 
 use Filament\Forms;
 use Filament\Tables;
-use App\Models\About;
+use App\Models\about;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
@@ -23,7 +23,7 @@ use App\Filament\Resources\AboutResource\RelationManagers;
 
 class AboutResource extends Resource
 {
-    protected static ?string $model = About::class;
+    protected static ?string $model = about::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
     protected static ?string $navigationLabel = 'A propos';
