@@ -6,7 +6,7 @@ use Filament\Forms;
 use Filament\Tables;
 use Filament\Forms\Set;
 use Filament\Forms\Form;
-use App\Models\Thematique;
+use App\Models\thematique;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
 use Filament\Resources\Resource;
@@ -27,7 +27,7 @@ use App\Filament\Resources\ThematiqueResource\RelationManagers;
 
 class ThematiqueResource extends Resource
 {
-    protected static ?string $model = Thematique::class;
+    protected static ?string $model = thematique::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
     protected static ?string $navigationLabel = "Domaine d'activités";

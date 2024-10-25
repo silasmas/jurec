@@ -4,7 +4,7 @@ namespace App\Filament\Resources;
 
 use Filament\Forms;
 use Filament\Tables;
-use App\Models\Domaine;
+use App\Models\domaine;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
@@ -21,7 +21,7 @@ use App\Filament\Resources\DomaineResource\RelationManagers;
 
 class DomaineResource extends Resource
 {
-    protected static ?string $model = Domaine::class;
+    protected static ?string $model = domaine::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-globe-alt';
 
