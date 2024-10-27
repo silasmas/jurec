@@ -19,6 +19,7 @@ use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
+use pxlrbt\FilamentEnvironmentIndicator\EnvironmentIndicatorPlugin;
 use Joaopaulolndev\FilamentGeneralSettings\FilamentGeneralSettingsPlugin;
 
 class AdminPanelProvider extends PanelProvider
@@ -70,6 +71,16 @@ class AdminPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ])->plugins([
+                EnvironmentIndicatorPlugin::make(['title' => 'Mon Indicateur'])
+                    ->visible(fn() => auth()->user()?->can('see_indicator') || auth()->user()?->hasRole('super_admin'))
+                    ->color(fn() => match (app()->environment()) {
+                        'production' => Color::Green,
+                        'staging' => Color::Orange,
+                        default => Color::Blue,
+                    })
+                    ->showBadge(showBadge: true)
+                    // ->setIcon('indicator-icon')
+                    ->showBorder(true),
                 \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make()
                     ->gridColumns([
                         'default' => 1,

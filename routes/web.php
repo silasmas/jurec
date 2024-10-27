@@ -24,6 +24,8 @@ Route::get('projets',  [about::class, 'projet'])->name('projets');
 Route::get('publications',  [about::class, 'blog'])->name(name: 'publications');
 Route::get('contact',  [about::class, 'contact'])->name('contact');
 
+Route::post('addNewMessage',  [about::class, 'addNewMessage'])->name('addNewMessage');
+
 Route::get('detailEquipe/{slug}',  [about::class, 'detailTeam'])->name('detailEquipe');
 Route::get('detailService/{slug}',  [about::class, 'detailService'])->name('detailService');
 Route::get('detailDomaine/{slug}',  [about::class, 'detailDomaine'])->name('detailDomaine');

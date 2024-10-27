@@ -9,6 +9,7 @@ use App\Models\article;
 use App\Models\service;
 use App\Models\activite;
 use App\Models\categorie;
+use App\Models\Partenaire;
 use App\Models\thematique;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\View;
@@ -49,6 +50,7 @@ class ViewServiceProvider extends ServiceProvider
 
             $recentProjets = projet::orderBy('created_at', 'desc')->take(5)->where('is_active', true)->get();
             $recentArticles = article::orderBy('created_at', 'desc')->take(5)->where('is_active', true)->get();
+            $partenaires = Partenaire::where('is_active', true)->get();
 
 
             $st = json_decode($settings->social_network, true);
@@ -67,6 +69,7 @@ class ViewServiceProvider extends ServiceProvider
             $view->with('recentArticles', $recentArticles);
             $view->with('articles', $articles);
             $view->with('about', $about);
+            $view->with('partenaires', $partenaires);
         });
     }
 }

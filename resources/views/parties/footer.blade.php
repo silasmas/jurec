@@ -5,30 +5,13 @@
             <div class="col-lg-12 col-md-12">
                 <h6 class="lacks-heading d-none">Lacks Heading</h6> <!-- lacks heading for w3c -->
                 <div class="owl-carousel" data-items="5" data-sm-items="4" data-xs-items="3" data-xx-items="2">
+                    @forelse ($partenaires as $p)
                     <div class="item">
-                        <img class="mx-auto img-fluid" src="../assets/images/clients/light/06.png" alt="">
+                        <img class="mx-auto img-fluid" src="{{ asset('storage/'.$p->logo) }}" alt="{{ $p->nom }}">
                     </div>
-                    <div class="item">
-                        <img class="mx-auto img-fluid" src="../assets/images/clients/light/07.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img class="mx-auto img-fluid" src="../assets/images/clients/light/08.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img class="mx-auto img-fluid" src="../assets/images/clients/light/09.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img class="mx-auto img-fluid" src="../assets/images/clients/light/10.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img class="mx-auto img-fluid" src="../assets/images/clients/light/06.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img class="mx-auto img-fluid" src="../assets/images/clients/light/08.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img class="mx-auto img-fluid" src="../assets/images/clients/light/09.png" alt="">
-                    </div>
+                    @empty
+
+                    @endforelse
                 </div>
             </div>
         </div>
@@ -45,8 +28,8 @@
                         </div>
                         <div class="contact-info">
                             <div class="text-center">
-                                <h5 class="mt-10 mb-10">17504 Carlton Cuevas Rd, </h5>
-                                <span>Gulfport, MS, 39503</span>
+                                <h5 class="mt-10 mb-10">4746, Avenue de la Gombe, Immeuble Prefed, 2e niveau-local 201</h5>
+                                <span>en face de l'Ecole Belge de Kinshasa, Commune de la Gombe </span>
                             </div>
                         </div>
                     </div>
@@ -59,7 +42,7 @@
                         <div class="contact-info">
                             <div class="text-center">
                                 <h5 class="mt-10 mb-10">{{ $setting->support_phone }}</h5>
-                                <span>Mon-Fri 8:30am-6:30pm</span>
+                                <span>Lundi-Vendredi 8h30'-16h30'</span>
                             </div>
                         </div>
                     </div>
@@ -72,7 +55,7 @@
                         <div class="contact-info">
                             <div class="text-center">
                                 <h5 class="mt-10 mb-10">{{ $setting->support_email}}</h5>
-                                <span>24 X 7 online support</span>
+                                <span>Aux heures de service</span>
                             </div>
                         </div>
                     </div>
@@ -87,7 +70,7 @@
             <div class="col-lg-6 col-md-6">
                 <div class="social text-start sm-mt-0 text-md-end xs-mt-20">
                     <ul>
-                        
+
                         <li {{ $settings['facebook']==null?'hidden':$settings['facebook'] }}>
                             <a href="{{ $settings['facebook'] }}" target="blank"> <i class="fab fa-facebook"></i> </a>
                         </li>

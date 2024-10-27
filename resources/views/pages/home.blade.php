@@ -332,12 +332,13 @@
                         @forelse ($about->couverture as $ab)
                         <div class="item"><img class="img-fluid full-width"
                                 src="{{ asset('storage/'.$ab) }}" alt="">
-                        </div>                            
+                        </div>
                         @empty
-                            
+
                         @endforelse
                     </div>
                 </div>
+
             </div>
             <div class="col-lg-6 sm-mt-30">
                 <div class="section-title">
@@ -362,6 +363,7 @@
                         </ul>
                     </div>
                 </div> --}}
+                <a class="button mt-0" href="{{ route('about') }}">En savoir plus</a>
             </div>
         </div>
         {{-- <div class="row">
@@ -427,14 +429,14 @@
                             <div class="p-4">
                                 <h4 class="fw-5"><a href="{{ route('detailService',['slug'=> $s->slug]) }}" class="text-black">{{ $s->titre }}</a></h4>
                                 <p class="mb-0 pb-0 text-black">
-                                {!! Str::limit($s->description, 100, '...') !!}    
+                                {!! Str::limit($s->description, 100, '...') !!}
                                 </p>
                             </div>
                         </div>
                     </div>
-                </div>                    
+                </div>
                 @empty
-                    
+
                 @endforelse
             </div>
             <div class="col-lg-12">
@@ -613,14 +615,14 @@
                         </div>
                         <div class="entry-meta mb-10">
                             <ul>
-                                <li> <i class="fa fa-folder-open-o"></i> 
+                                <li> <i class="fa fa-folder-open-o"></i>
                                     <a href="#">{{ $p->domaine->nom}} </a> </li>
                                 <li><a href="#"><i class="fa fa-calendar-o"></i>{{ $p->created_at->diffForHumans() }}</a></li>
                             </ul>
                         </div>
                         <div class="entry-content">
                             <p>
-                                {!! Str::limit($p->description, 100, '...') !!} 
+                                {!! Str::limit($p->description, 100, '...') !!}
                             </p>
                         </div>
                         <div class="entry-share clearfix">
@@ -632,9 +634,9 @@
                         </div>
                     </div>
                 </div>
-            </div>                
+            </div>
             @empty
-                
+
             @endforelse
             {{-- <div class="col-lg-4 col-md-4">
                 <div class="blog-entry mb-50">

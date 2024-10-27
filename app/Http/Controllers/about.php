@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\projet;
 use App\Models\article;
+use App\Models\message;
 use App\Models\service;
 use Illuminate\View\View;
 use App\Models\thematique;
@@ -90,5 +91,28 @@ class about extends Controller
         return view('profile.edit', [
             'user' => $request->user(),
         ]);
+    }
+    public function addNewMessage(Request $request)
+    {
+
+        $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'lowercase', 'email', 'max:255'],
+            'message' => ['required', 'string'],
+            'phone' => ['required', 'string'],
+            // 'subject' => ['required', 'string', 'max:255'],
+        ]);
+        $rep = message::create([
+            'nom' => $request->email,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'message' => $request->message,
+        ]);
+
+        if ($rep) {
+            return response()->json(['reponse' => true, 'msg' => "Enregistrement réussi"]);
+        } else {
+            return response()->json(['reponse' => false, 'msg' => "Erreur d'enregistrement."]);
+        }
     }
 }

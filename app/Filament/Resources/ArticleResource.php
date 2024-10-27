@@ -26,6 +26,8 @@ use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\ArticleResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\ArticleResource\RelationManagers;
+use App\Filament\Resources\ArticleResource\Widgets\StatsOverview;
+use EightyNine\FilamentAdvancedWidget\AdvancedStatsOverviewWidget;
 
 class ArticleResource extends Resource
 {
@@ -172,6 +174,13 @@ class ArticleResource extends Resource
             'index' => Pages\ListArticles::route('/'),
             'create' => Pages\CreateArticle::route('/create'),
             'edit' => Pages\EditArticle::route('/{record}/edit'),
+        ];
+    }
+    public static function getWidgets(): array
+    {
+        return [
+            AdvancedStatsOverviewWidget::class,
+            // StatsOverview::class,
         ];
     }
 
