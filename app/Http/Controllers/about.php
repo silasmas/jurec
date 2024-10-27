@@ -110,7 +110,7 @@ class about extends Controller
         ]);
 
         if ($rep) {
-            return response()->json(['reponse' => true, 'msg' => "Enregistrement réussi"]);
+            return response()->json(['reponse' => true, 'msg' => "Message envoyé avec succès!"]);
         } else {
             return response()->json(['reponse' => false, 'msg' => "Erreur d'enregistrement."]);
         }

@@ -4,7 +4,7 @@ namespace App\Filament\Resources;
 
 use Filament\Forms;
 use Filament\Tables;
-use App\Models\Message;
+use App\Models\message;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
@@ -18,7 +18,7 @@ use Filament\Forms\Components\Textarea;
 
 class MessageResource extends Resource
 {
-    protected static ?string $model = Message::class;
+    protected static ?string $model = message::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-envelope-open';
     protected static ?string $navigationLabel = 'Boite de reception';
