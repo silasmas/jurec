@@ -299,7 +299,7 @@
                         data-frames='[{"delay":280,"speed":3000,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                         data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                         data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                        style="z-index: 12;"><img src="{{ asset('assets/revolution/assets/slider-06/17988-plan.png') }}"
+                        style="z-index: 12;"><img src="{{ asset('assets/revolution/assets/slider-06/4-1.png') }}"
                             alt="" data-ww="598px" data-hh="324px" data-no-retina> </div>
                 </li>
             </ul>
