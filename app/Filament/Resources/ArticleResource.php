@@ -27,7 +27,6 @@ use App\Filament\Resources\ArticleResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\ArticleResource\RelationManagers;
 use App\Filament\Resources\ArticleResource\Widgets\StatsOverview;
-use EightyNine\FilamentAdvancedWidget\AdvancedStatsOverviewWidget;
 
 class ArticleResource extends Resource
 {
@@ -179,7 +178,7 @@ class ArticleResource extends Resource
     public static function getWidgets(): array
     {
         return [
-            AdvancedStatsOverviewWidget::class,
+            // AdvancedStatsOverviewWidget::class,
             // StatsOverview::class,
         ];
     }
