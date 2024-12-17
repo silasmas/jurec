@@ -45,7 +45,8 @@ class AdminPanelProvider extends PanelProvider
             ->brandLogoHeight(fn() => auth()->check() ? '3rem' : '5rem')
             ->favicon(asset('assets/images/3.png'))
             ->colors([
-                'primary' => Color::Amber,
+                'primary' => "#478534",
+                // 'primary' => Color::Amber,
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')

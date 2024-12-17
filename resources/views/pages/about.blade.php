@@ -18,15 +18,13 @@
                 <div class="who-we-are-left">
                     <div class="owl-carousel" data-nav-dots="true" data-items="1" data-md-items="1" data-sm-items="1"
                         data-xs-items="1" data-xx-items="1">
+                        @forelse ($about->couverture as $ab)
                         <div class="item"><img class="img-fluid full-width"
-                                src="{{ asset('assets/images/about/01.jpg') }}" alt="">
+                                src="{{ asset('storage/'.$ab) }}" alt="">
                         </div>
-                        <div class="item"><img class="img-fluid full-width"
-                                src="{{ asset('assets/images/about/02.jpg') }}" alt="">
-                        </div>
-                        <div class="item"><img class="img-fluid full-width"
-                                src="{{ asset('assets/images/about/03.jpg') }}" alt="">
-                        </div>
+                        @empty
+
+                        @endforelse
                     </div>
                 </div>
             </div>

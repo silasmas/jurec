@@ -170,7 +170,7 @@
                         data-xs-items="1" data-xx-items="1">
                         @forelse ($about->couverture as $ab)
                         <div class="item"><img class="img-fluid full-width"
-                                src="{{ asset('storage/'.$ab) }}" alt="">
+                                src="   " alt="">
                         </div>
                         @empty
 
@@ -255,7 +255,7 @@
 <!--=================================
    service -->
 
-<section class="secrvice-blog pb-80">
+<section class="secrvice-blog pb-80"> 
     <div class="container">
         <div class="row">
             <div class="owl-carousel" data-nav-dots="true" data-items="3" data-md-items="3" data-sm-items="3"
