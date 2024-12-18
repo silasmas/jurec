@@ -7,7 +7,7 @@
                 <div class="owl-carousel" data-items="5" data-sm-items="4" data-xs-items="3" data-xx-items="2">
                     @forelse ($partenaires as $p)
                     <div class="item">
-                        <img style="height:90px; width:350px" class="mx-auto img-fluid"
+                        <img style="height:100px; width:100px" class="mx-auto img-fluid"
                         src="{{ asset('storage/'.$p->logo) }}" alt="{{ $p->nom }}">
                     </div>
                     @empty
@@ -65,7 +65,8 @@
         </div>
         <div class="row top">
             <div class="col-lg-6 col-md-6">
-                <img class="img-fluid" id="logo-footer" src="{{ asset('storage/'.$setting->site_logo) }}" alt="">
+                <img class="img-fluid" id="logo-footer" src="{{ asset('storage/'.$setting->site_logo) }}"
+                style="height:90px; width:350px" alt="">
             </div>
 
             <div class="col-lg-6 col-md-6">
