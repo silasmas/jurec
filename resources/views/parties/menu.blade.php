@@ -15,7 +15,7 @@
                             <ul class="menu-logo">
                                 <li>
                                     <a href="#">
-                                        <img id="logo_img" height="200" width="200"
+                                        <img id="logo_img" height="400" width="200"
                                             src="{{ asset('storage/'.$setting->site_logo) }}" alt="logo">
                                     </a>
                                 </li>
@@ -27,8 +27,6 @@
                                     </li>
                                     <li>
                                         <a href="{{ route('about') }}">A propos</a>
-                                    </li>
-                                    <li><a href="{{ route('equipe') }}">Notre équipe</a>
                                     </li>
                                     <li>
                                         <a href="javascript:void(0)">Expertises
@@ -43,9 +41,9 @@
                                                 <!-- drop down second level -->
                                                 <ul class="drop-down-multilevel">
                                                     @forelse ($menuService as $s)
-                                                    <li><a href="{{ route("detailService",['slug' => $s->slug]) }}">{{ $s->titre }}</a></li>                                                        
+                                                    <li><a href="{{ route("detailService",['slug' => $s->slug]) }}">{{ $s->titre }}</a></li>
                                                     @empty
-                                                        
+
                                                     @endforelse
                                                 </ul>
                                             </li>
@@ -56,9 +54,9 @@
                                                 <!-- drop down second level -->
                                                 <ul class="drop-down-multilevel">
                                                     @forelse ($menuDomaine as $s)
-                                                    <li><a href="{{ route("detailDomaine",['slug' => $s->slug]) }}">{{ $s->titre }}</a></li>                                                        
+                                                    <li><a href="{{ route("detailDomaine",['slug' => $s->slug]) }}">{{ $s->titre }}</a></li>
                                                     @empty
-                                                        
+
                                                     @endforelse
                                                 </ul>
                                             </li>

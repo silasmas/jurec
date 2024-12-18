@@ -7,7 +7,8 @@
                 <div class="owl-carousel" data-items="5" data-sm-items="4" data-xs-items="3" data-xx-items="2">
                     @forelse ($partenaires as $p)
                     <div class="item">
-                        <img width="100" class="mx-auto img-fluid" src="{{ asset('storage/'.$p->logo) }}" alt="{{ $p->nom }}">
+                        <img width="200" height="300" class="mx-auto img-fluid"
+                        src="{{ asset('storage/'.$p->logo) }}" alt="{{ $p->nom }}">
                     </div>
                     @empty
 
