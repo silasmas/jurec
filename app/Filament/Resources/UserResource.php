@@ -9,8 +9,11 @@ use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
 use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Toggle;
+use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
+use Filament\Resources\Pages\EditRecord;
 use Illuminate\Database\Eloquent\Builder;
 use Filament\Forms\Components\CheckboxList;
 use App\Filament\Resources\UserResource\Pages;
@@ -37,19 +40,20 @@ class UserResource extends Resource
                     ->maxLength(255),
                 TextInput::make('password')
                     ->password()
-                    ->required()
+                    ->maxLength(255)
+                    ->hidden(fn($livewire) => $livewire instanceof EditRecord) // Masqué si en mode édition
                     ->maxLength(255),
                 Select::make('roles')
                     ->relationship('roles', 'name')
                     ->multiple()
                     ->preload()
                     ->searchable(),
-
-                // Using CheckboxList Component
-                CheckboxList::make('roles')
-                    ->relationship('roles', 'name')
-                    ->searchable(),
-                // Forms\Components\DateTimePicker::make('email_verified_at'),
+                Toggle::make('notifiable')
+                    ->label('Notifiable (pour être notifier)')
+                    ->columnSpanFull()
+                    ->onColor('success')
+                    ->offColor('danger')
+                    ->required(),
             ]);
     }
 
@@ -64,6 +68,9 @@ class UserResource extends Resource
                 TextColumn::make('roles.name')
                     ->badge()->color('success')
                     ->searchable(),
+                IconColumn::make('notifiable')
+                    ->label('Notifiable')
+                    ->boolean(),
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
@@ -100,7 +107,7 @@ class UserResource extends Resource
         return [
             'index' => Pages\ListUsers::route('/'),
             // 'create' => Pages\CreateUser::route('/create'),
-            // 'edit' => Pages\EditUser::route('/{record}/edit'),
+            'edit' => Pages\EditUser::route('/{record}/edit'),
         ];
     }
 
@@ -110,6 +117,6 @@ class UserResource extends Resource
     }
     public static function getNavigationBadgeColor(): string|array|null
     {
-        return static::getModel()::count() <1 ? "danger" : "success";
+        return static::getModel()::count() < 1 ? "danger" : "success";
     }
 }
