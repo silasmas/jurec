@@ -15,7 +15,7 @@
                             <ul class="menu-logo">
                                 <li>
                                     <a href="#">
-                                        <img id="logo_img" height="400" width="200"
+                                        <img id="logo_img" style="height:60px; width:280px"
                                             src="{{ asset('storage/'.$setting->site_logo) }}" alt="logo">
                                     </a>
                                 </li>
