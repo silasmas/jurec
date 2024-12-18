@@ -72,6 +72,7 @@
 
             },
             error: function(xhr) {
+                console.log(xhr)
             var errors = xhr.responseJSON.errors;
             var errorMessage = '';
             $.each(errors, function(key, value) {

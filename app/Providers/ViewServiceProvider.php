@@ -31,7 +31,7 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        View::composer('pages.*', function ($view) {
+        View::composer('*', function ($view) {
             $titre = getTitle(Route::currentRouteName());
 
             $settings = DB::table('general_settings')->first();
