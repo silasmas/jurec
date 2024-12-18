@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notification de Message</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -96,23 +97,21 @@
             <p>Vous recevez cet e-mail parce que vous avez choisi de recevoir des notifications.</p>
             <p>Suivez-nous sur :</p>
             <div class="social-icons">
-                <ul>
 
-                    <li {{ $settings['facebook']==null?'hidden':$settings['facebook'] }}>
-                        <a href="{{ $settings['facebook'] }}" target="blank"> <i class="fab fa-facebook"></i> </a>
-                    </li>
-                    <li {{ $settings['x_twitter']==null?'hidden':$settings['x_twitter'] }}>
-                        <a href="{{ $settings['x_twitter'] }}" target="blank"> <i class="fab fa-x"></i> </a>
-                    </li>
+                        <a href="{{ $settings['facebook'] }}" target="blank" {{ $settings['facebook']??"hidden" }}> <i class="fab fa-facebook"></i> </a>
 
-                    <li {{ $settings['instagram']==null?'hidden':$settings['instagram'] }}>
-                        <a href="{{ $settings['instagram'] }}" target="blank"> <i class="fab fa-instagram"></i> </a>
-                    </li>
 
-                    <li {{ $settings['youtube']==null?'hidden':$settings['youtube'] }}>
-                        <a href="{{ $settings['youtube'] }}" target="blank"> <i class="fab fa-youtube"></i> </a>
-                    </li>
-                </ul>
+                        <a href="{{ $settings['x_twitter'] }}" target="blank"
+                        {{ $settings['x_twitter']??"hidden" }}> <i class="fab fa-x"></i> </a>
+
+
+                        <a href="{{ $settings['instagram'] }}" target="blank"
+                        {{ $settings['instagram']??"hidden" }}> <i class="fab fa-instagram"></i> </a>
+
+
+                        <a href="{{ $settings['youtube'] }}" target="blank"
+                        {{ $settings['youtube']??"hidden" }}> <i class="fab fa-youtube"></i> </a>
+
                 {{-- <a href="https://facebook.com" target="_blank">
                     <img src="https://via.placeholder.com/24/007bff?text=F" alt="Facebook">
                 </a>

@@ -14,7 +14,7 @@ class MessageObserver
      */
     public function created(Message $message): void
     {
-        $this->notifyUsers($message, 'created');
+        $this->notifyUsers($message, 'envoyé');
     }
 
     /**
@@ -22,7 +22,7 @@ class MessageObserver
      */
     public function updated(Message $message): void
     {
-        $this->notifyUsers($message, 'updated');
+        $this->notifyUsers($message, 'modifié');
     }
 
     /**
@@ -30,7 +30,7 @@ class MessageObserver
      */
     public function deleted(Message $message): void
     {
-        $this->notifyUsers($message, 'deleted');
+        $this->notifyUsers($message, 'supprimer');
     }
 
     /**
