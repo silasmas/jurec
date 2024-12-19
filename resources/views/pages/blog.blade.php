@@ -84,7 +84,7 @@ $titre="";
                                                 href="{{ route('detailBlog',['slug'=>$a->slug]) }}">Voir plus<i
                                                     class="fa fa-angle-right" aria-hidden="true"></i></a>
                                         </div>
-                                        @include('parties.partageRs')
+                                        {{-- @include('parties.partageRs') --}}
                                     </div>
                                 </div>
                             </div>

@@ -85,7 +85,7 @@
                                                     @php
                                                     $titre=$p->titre;
                                                     @endphp
-                                                    @include('parties.partageRs')
+                                                    {{-- @include('parties.partageRs') --}}
                                                 </div>
                                             </div>
                                         </div>
