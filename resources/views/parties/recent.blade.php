@@ -55,21 +55,7 @@
                                                         }}</a>
                                                 </div>
                                                 <div class="entry-meta mb-10">
-                                                    <ul>
-                                                        <li> <i class="fa fa-folder-open-o"></i>
-                                                            <a href="#">{{ $p->domaine->nom}} </a>
-                                                        </li>
-                                                        <li><a href="#"><i class="fa fa-calendar-o"></i>{{
-                                                                $p->created_at->diffForHumans()
-                                                                }}</a></li>
-                                                        <li>
-                                                            <a href="#"
-                                                                onclick="copyToClipboard('{{route('detailBlog',['slug'=>$p->slug])}}')"
-                                                                class="">
-                                                                <i class="fas fa-link"></i> Copier le lien
-                                                            </a>
-                                                        </li>
-                                                    </ul>
+                                                    @include('parties.lien')
                                                 </div>
                                                 <div class="entry-content">
                                                     <p>

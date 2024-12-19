@@ -7,6 +7,7 @@
         </li>
         <li>
             <a onclick="xShared({{ json_encode($titre)  }})" data-size="large" data-via="JUREC" data-hashtags="JUREC" data-related="" data-show-count="true"
+            style="cursor: pointer;"
             > <i class="fab fa-x"></i> </a>
             {{-- <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank" data-size="large" data-via="JUREC" data-hashtags="JUREC" data-related="" data-show-count="true"
             > <i class="fab fa-x"></i> </a> --}}
