@@ -92,18 +92,18 @@ function actualiser() {
 </script>
 <script>
     $(document).ready(function () {
-    $('#download-pdf').click(function () {
+    $('#download-pdf').click(function (e) {
         e.preventDefault(); // Empêche le comportement par défaut du lien
 
             // Récupère le chemin du fichier à partir de l'attribut href
             const fileUrl = $(this).attr('name');
-
+        // alert(fileUrl)
             // Vérifie si le chemin existe
             if (fileUrl) {
                 Swal.fire({
                 title: 'Téléchargement',
                 text:"Téléchargement en cours...",
-                icon: 'error'
+                icon: 'info'
                     })
                 // Enclenche le téléchargement
                 // window.location.href = fileUrl;
@@ -114,6 +114,14 @@ function actualiser() {
                 .appendTo('body')
                 .get(0)
                 .click();
+                // Délai estimé pour la notification
+                setTimeout(function () {
+                    Swal.fire({
+                title: 'Téléchargement',
+                text:"Le téléchargement devrait être terminé.",
+                icon: 'success'
+                    })
+                }, 3000); // Ajustez ce délai selon la taille des fichiers
             } else {
                 Swal.fire({
                 title: 'Téléchargement',
@@ -139,6 +147,45 @@ function actualiser() {
         }
     });
 });
+function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(() => {
+            Swal.fire({
+                title: 'Text',
+                text:"Lien copié dans le presse-papiers",
+                icon: 'info'
+                    })
+        });
+    }
+// function whatsappShared(titre){
+//         var LinkTextToShare = 'https://wa.me/?text=' + encodeURIComponent(titre+" "+window.location.href) ;
+//         window.open(LinkTextToShare,"_blank");
+
+//     }
+//     function facebookShared(){
+//         var LinkTextToShare = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL) ;
+//         window.open(LinkTextToShare,"_blank");
+
+//     }
+//     function xShared(titre){
+//         var LinkTextToShare = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(document.URL) + '&text=' + encodeURIComponent(titre) ;
+//         window.open(LinkTextToShare,"_blank");
+        
+//     }
+
+function whatsappShared(titre) {
+    const linkTextToShare = `https://wa.me/?text=${encodeURIComponent(titre + ' ' + window.location.href)}`;
+    window.open(linkTextToShare, "_blank");
+}
+
+function facebookShared() {
+    const linkTextToShare = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`;
+    window.open(linkTextToShare, "_blank");
+}
+
+function xShared(titre) {
+    const linkTextToShare = `https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(titre)}`;
+    window.open(linkTextToShare, "_blank");
+}
 
 </script>
 </body>

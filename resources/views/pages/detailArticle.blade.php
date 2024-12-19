@@ -3,7 +3,9 @@
 
 @section("content")
 @include("parties.banner")
-
+@php
+$titre=$article->titre;
+@endphp
 <section class="blog blog-single white-bg page-section-ptb">
     <div class="container">
         <div class="row">

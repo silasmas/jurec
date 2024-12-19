@@ -2,6 +2,9 @@
 
 
 @section("content")
+@php
+$titre="";
+@endphp
 <section class="rev-slider">
     <div id="rev_slider_272_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
         data-alias="webster-slider-6" data-source="gallery"
