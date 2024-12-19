@@ -46,6 +46,8 @@ class ViewServiceProvider extends ServiceProvider
             $menuDomaine = thematique::where('is_active', true)->get();
             $projets = projet::where('is_active', true)->get();
             $articles = article::where('is_active', true)->get();
+            $recents = article::where([['is_recent', true], ['is_active', true]])->get();
+            // dd($recents);
             $about = about::first();
 
             $recentProjets = projet::orderBy('created_at', 'desc')->take(5)->where('is_active', true)->get();
@@ -60,6 +62,7 @@ class ViewServiceProvider extends ServiceProvider
             $view->with('setting', $settings);
             $view->with('teamCat', $teamCat);
             $view->with('team', $team);
+            $view->with('recents', $recents);
             $view->with('menuService', $menuService);
             $view->with('menuDomaine', $menuDomaine);
             $view->with('projets', $projets);

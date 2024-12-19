@@ -90,6 +90,57 @@ function actualiser() {
         location.reload();
     }
 </script>
+<script>
+    $(document).ready(function () {
+    $('#download-pdf').click(function () {
+        e.preventDefault(); // Empêche le comportement par défaut du lien
+
+            // Récupère le chemin du fichier à partir de l'attribut href
+            const fileUrl = $(this).attr('name');
+
+            // Vérifie si le chemin existe
+            if (fileUrl) {
+                Swal.fire({
+                title: 'Téléchargement',
+                text:"Téléchargement en cours...",
+                icon: 'error'
+                    })
+                // Enclenche le téléchargement
+                // window.location.href = fileUrl;
+                // Enclenche le téléchargement
+            $('<a>')
+                .attr('href', fileUrl)
+                .attr('download', '')
+                .appendTo('body')
+                .get(0)
+                .click();
+            } else {
+                Swal.fire({
+                title: 'Téléchargement',
+                text:"Fichier introuvable !",
+                icon: 'error'
+                    })
+            }
+        });
+    // Vérifie si le popup doit être affiché
+    const popupDisabled = localStorage.getItem('popupDisabled');
+
+    if (!popupDisabled) {
+        // Affiche le modal si non désactivé
+        const myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+        myModal.show();
+    }
+
+    // Ferme le popup et enregistre la préférence si nécessaire
+    $('#exampleModal').on('hide.bs.modal', function () {
+        if ($('#disable-popup').is(':checked')) {
+            // Enregistre la préférence dans le localStorage
+            localStorage.setItem('popupDisabled', true);
+        }
+    });
+});
+
+</script>
 </body>
 
 </html>

@@ -29,12 +29,12 @@
                         data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
                         data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                         style="z-index: 5; white-space: nowrap; font-size: 60px; line-height: 100px; font-weight: 400; color: #0a0a0a; letter-spacing: 0px;font-family:Montserrat;">
-                        La protection de <b>l’Environnement </b>  et <br /> La gestion des ressources naturelles </div>
+                        La protection de <b>l’Environnement </b> et <br /> La gestion des ressources naturelles </div>
 
                     <!-- LAYER NR. 5 -->
-                    <a class="tp-caption rev-btn tp-resizeme rev-button" href="{{ route('about') }}" target="_self" id="slide-764-layer-25"
-                        data-x="795" data-y="340" data-width="['auto']" data-height="['auto']" data-type="button"
-                        data-actions='' data-responsive_offset="on"
+                    <a class="tp-caption rev-btn tp-resizeme rev-button" href="{{ route('about') }}" target="_self"
+                        id="slide-764-layer-25" data-x="795" data-y="340" data-width="['auto']" data-height="['auto']"
+                        data-type="button" data-actions='' data-responsive_offset="on"
                         data-frames='[{"delay":2960,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power0.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(10,10,10);bs:solid;bw:0 0 0 0;"}]'
                         data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]"
                         data-paddingright="[30,30,30,30]" data-paddingbottom="[12,12,12,12]"
@@ -43,9 +43,9 @@
                         Qui sommes-nous </a>
 
                     <!-- LAYER NR. 6 -->
-                    <a class="tp-caption tp-resizeme" href="{{ route('services') }}" target="_self" id="slide-764-layer-26" data-x="979"
-                        data-y="340" data-width="['auto']" data-height="['auto']" data-type="button" data-actions=''
-                        data-responsive_offset="on"
+                    <a class="tp-caption tp-resizeme" href="{{ route('services') }}" target="_self"
+                        id="slide-764-layer-26" data-x="979" data-y="340" data-width="['auto']" data-height="['auto']"
+                        data-type="button" data-actions='' data-responsive_offset="on"
                         data-frames='[{"delay":3410,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power0.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(10,10,10);"}]'
                         data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[10,10,10,10]"
                         data-paddingright="[30,30,30,30]" data-paddingbottom="[10,10,10,10]"
@@ -74,12 +74,12 @@
                         data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
                         data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                         style="z-index: 5; white-space: nowrap; font-size: 90px; line-height: 100px; font-weight: 400; color: #0a0a0a; letter-spacing: 0px;font-family:Montserrat;">
-                        Contribution à <b>l’émergence</b> du<br />Droit de <b>l’Environnement</b>  </div>
+                        Contribution à <b>l’émergence</b> du<br />Droit de <b>l’Environnement</b> </div>
 
                     <!-- LAYER NR. 19 -->
-                    <a class="tp-caption rev-btn tp-resizeme rev-button" href="{{ route('about') }}" target="_self" id="slide-765-layer-3"
-                        data-x="800" data-y="585" data-width="['auto']" data-height="['auto']" data-type="button"
-                        data-actions='' data-responsive_offset="on"
+                    <a class="tp-caption rev-btn tp-resizeme rev-button" href="{{ route('about') }}" target="_self"
+                        id="slide-765-layer-3" data-x="800" data-y="585" data-width="['auto']" data-height="['auto']"
+                        data-type="button" data-actions='' data-responsive_offset="on"
                         data-frames='[{"delay":2220,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power0.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(10,10,10);bc:rgb(10,10,10);bs:solid;bw:0 0 0 0;"}]'
                         data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]"
                         data-paddingright="[30,30,30,30]" data-paddingbottom="[12,12,12,12]"
@@ -89,9 +89,9 @@
                     </a>
 
                     <!-- LAYER NR. 20 -->
-                    <a class="tp-caption tp-resizeme" href="{{ route('domaines') }}" target="_self" id="slide-765-layer-4" data-x="970"
-                        data-y="585" data-width="['auto']" data-height="['auto']" data-type="button" data-actions=''
-                        data-responsive_offset="on"
+                    <a class="tp-caption tp-resizeme" href="{{ route('domaines') }}" target="_self"
+                        id="slide-765-layer-4" data-x="970" data-y="585" data-width="['auto']" data-height="['auto']"
+                        data-type="button" data-actions='' data-responsive_offset="on"
                         data-frames='[{"delay":2770,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":270,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power0.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(10,10,10);"}]'
                         data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]"
                         data-paddingright="[30,30,30,30]" data-paddingbottom="[12,12,12,12]"
@@ -100,8 +100,8 @@
                         Domaines d'expertise </a>
 
 
-                        <!-- LAYER NR. 21 -->
-                   <div class="tp-caption tp-resizeme" id="slide-765-layer-5" data-x="" data-y=""
+                    <!-- LAYER NR. 21 -->
+                    <div class="tp-caption tp-resizeme" id="slide-765-layer-5" data-x="" data-y=""
                         data-width="['none','none','none','none']" data-height="['none','none','none','none']"
                         data-type="image" data-responsive_offset="on"
                         data-frames='[{"delay":100,"speed":3000,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
@@ -126,8 +126,9 @@
                         data-frames='[{"delay":100,"speed":3000,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                         data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                         data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                        style="z-index: 11;"><img src="{{ asset('assets/revolution/assets/slider-06/bb88b-plant.png') }}"
-                            alt="" data-ww="426px" data-hh="439px" data-no-retina> </div>
+                        style="z-index: 11;"><img
+                            src="{{ asset('assets/revolution/assets/slider-06/bb88b-plant.png') }}" alt=""
+                            data-ww="426px" data-hh="439px" data-no-retina> </div>
 
                     <!-- LAYER NR. 25 -->
                     <div class="tp-caption tp-resizeme" id="slide-765-layer-9" data-x="right" data-hoffset="-11"
@@ -169,8 +170,7 @@
                     <div class="owl-carousel" data-nav-dots="true" data-items="1" data-md-items="1" data-sm-items="1"
                         data-xs-items="1" data-xx-items="1">
                         @forelse ($about->couverture as $ab)
-                        <div class="item"><img class="img-fluid full-width"
-                                src="   " alt="">
+                        <div class="item"><img class="img-fluid full-width" src="{{ asset('storage/'.$ab) }}" alt="">
                         </div>
                         @empty
 
@@ -205,43 +205,10 @@
                 <a class="button mt-0" href="{{ route('about') }}">En savoir plus</a>
             </div>
         </div>
-        {{-- <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <div class="feature-text left-icon mt-50 xs-mt-20">
-                    <div class="feature-icon">
-                        <span class="ti-desktop theme-color" aria-hidden="true"></span>
-                    </div>
-                    <div class="feature-info">
-                        <h5 class="text-back">Notre histoire</h5>
-                        <p>Enim expedita sed quia nesciunt, dolor sit consectetur conseqt quibusdam</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <div class="feature-text left-icon mt-50 xs-mt-20">
-                    <div class="feature-icon">
-                        <span class="ti-server theme-color" aria-hidden="true"></span>
-                    </div>
-                    <div class="feature-info">
-                        <h5 class="text-back">Notre Vision</h5>
-                        <p>Quia nesciunt dolor sit consectetur conseqt quibusdam, enim expedita sed </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <div class="feature-text left-icon mt-50 xs-mt-20">
-                    <div class="feature-icon">
-                        <span class="ti-heart theme-color" aria-hidden="true"></span>
-                    </div>
-                    <div class="feature-info">
-                        <h5 class="text-back">Notre mission</h5>
-                        <p>Expedita sed quia nesciunt dolor sit consectetur conseqt quibusdam enim </p>
-                    </div>
-                </div>
-            </div>
-        </div> --}}
+
     </div>
 </section>
+
 <section class="our-clients theme-bg text-white page-section-ptb position-relative">
     <div class="container">
         <div class="row">
@@ -255,7 +222,7 @@
 <!--=================================
    service -->
 
-<section class="secrvice-blog pb-80"> 
+<section class="secrvice-blog pb-80">
     <div class="container">
         <div class="row">
             <div class="owl-carousel" data-nav-dots="true" data-items="3" data-md-items="3" data-sm-items="3"
@@ -266,9 +233,10 @@
                         <div class="card border-0  box-content o-hidden h-100">
                             <img class="img-fluid" src="{{ asset('storage/'.$s->couverture) }}" alt="">
                             <div class="p-4">
-                                <h4 class="fw-5"><a href="{{ route('detailService',['slug'=> $s->slug]) }}" class="text-black">{{ $s->titre }}</a></h4>
+                                <h4 class="fw-5"><a href="{{ route('detailService',['slug'=> $s->slug]) }}"
+                                        class="text-black">{{ $s->titre }}</a></h4>
                                 <p class="mb-0 pb-0 text-black">
-                                {!! Str::limit($s->description, 100, '...') !!}
+                                    {!! Str::limit($s->description, 100, '...') !!}
                                 </p>
                             </div>
                         </div>
@@ -280,7 +248,8 @@
             </div>
             <div class="col-lg-12">
                 <div class="text-center">
-                    <a type="button" class="button button-border  icon mb-10 mr-10 mt-lg-5 mt-3" href="{{ route('services') }}">
+                    <a type="button" class="button button-border  icon mb-10 mr-10 mt-lg-5 mt-3"
+                        href="{{ route('services') }}">
                         Voir plus ... » </a>
                 </div>
             </div>
@@ -290,10 +259,41 @@
 
 <!--=================================
    service -->
-
-@include("parties.team")
-
-
+   <section class="page-section-ptb theme-bg text-white position-relative">
+    <h6 class="lacks-heading d-none">Statistiques</h6> <!-- lacks heading for w3c -->
+    <div class="container">
+     <div class="row">
+          <div class="col-lg-4 col-sm-6 sm-mb-30">
+          <div class="counter left-icon text-white">
+            <span class="icon ti-check-box theme-color" aria-hidden="true"></span>
+            <span class="timer" data-to="49" data-speed="10000">49</span>
+            <label>Projets realisés</label>
+          </div>
+        </div>
+         <div class="col-lg-4 col-sm-6 sm-mb-30">
+          <div class="counter left-icon text-white">
+           <span class="icon ti-face-smile theme-color" aria-hidden="true"></span>
+            <span class="timer" data-to="37" data-speed="10000">37</span>
+            <label>Activités</label>
+          </div>
+        </div>
+         <div class="col-lg-4 col-sm-6 xs-mb-30">
+          <div class="counter left-icon text-white">
+            <span class="icon ti-user theme-color" aria-hidden="true"></span>
+            <span class="timer" data-to="500" data-speed="10000">500</span>
+            <label>Personnes impactées</label>
+          </div>
+        </div>
+         {{-- <div class="col-lg-3 col-sm-6">
+          <div class="counter left-icon text-white">
+            <span class="icon ti-face-smile theme-color" aria-hidden="true"></span>
+            <span class="timer" data-to="3237" data-speed="10000">3237</span>
+            <label>HAPPY CLIENTS</label>
+          </div>
+        </div> --}}
+      </div>
+  </div>
+  </section>
 
 <section class="page-section-ptb bg-overlay-black-80 jarallax" data-speed="0.6" data-img-src="assets/images/bg/06.jpg">
     <div class="container">
@@ -346,88 +346,14 @@
 <section class="blog blog-grid-3-column white-bg page-section-ptb">
     <div class="container">
         <div class="row">
-            {{-- <div class="col-lg-4 col-md-4">
-                <div class="blog-entry mb-50">
-                    <div class="entry-image clearfix">
-                        <img class="img-fluid" src="assets/images/blog/01.jpg" alt="">
-                    </div>
-                    <div class="blog-detail">
-                        <div class="entry-title mb-10">
-                            <a href="#">Blogpost With Image</a>
-                        </div>
-                        <div class="entry-meta mb-10">
-                            <ul>
-                                <li> <i class="fa fa-folder-open-o"></i> <a href="#"> Design,</a> <a href="#"> HTML5
-                                    </a> </li>
-                                <li><a href="#"><i class="fa fa-comment-o"></i> 5</a></li>
-                                <li><a href="#"><i class="fa fa-calendar-o"></i> 12 Aug 2021</a></li>
-                            </ul>
-                        </div>
-                        <div class="entry-content">
-                            <p>Quae laboriosam sunt hic perspiciatis, asperiores mollitia excepturi voluptatibus sequi
-                                nostrum ipsam veniam omnis nihil! A ea maiores corporis. Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua. Consectetur, assumenda provident lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. </p>
-                        </div>
-                        <div class="entry-share clearfix">
-                            @include('parties.partageRs')
-                        </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-8">
+                    <div class="text-center section-title">
+                        <h2 class="title-effect">Nos publications</h2>
+                        <p>Nous publions sur nos réalisations et nos articles</p>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-4 col-md-4">
-                <div class="blog-entry mb-50">
-                    <div class="clearfix">
-                        <ul class="grid-post">
-                            <li>
-                                <div class="portfolio-item">
-                                    <img class="img-fluid" src="assets/images/blog/05.jpg" alt="">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="portfolio-item">
-                                    <img class="img-fluid" src="assets/images/blog/06.jpg" alt="">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="portfolio-item">
-                                    <img class="img-fluid" src="assets/images/blog/07.jpg" alt="">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="portfolio-item">
-                                    <img class="img-fluid" src="assets/images/blog/08.jpg" alt="">
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="blog-detail">
-                        <div class="entry-title mb-10">
-                            <a href="#">Blogpost With Image Grid Gallery Format </a>
-                        </div>
-                        <div class="entry-meta mb-10">
-                            <ul>
-                                <li> <i class="fa fa-folder-open-o"></i> <a href="#"> Design,</a> <a href="#"> HTML5
-                                    </a> </li>
-                                <li><a href="#"><i class="fa fa-comment-o"></i> 5</a></li>
-                                <li><a href="#"><i class="fa fa-calendar-o"></i> 12 Aug 2021</a></li>
-                            </ul>
-                        </div>
-                        <div class="entry-content">
-                            <p>A ea maiores corporis. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. consectetur,
-                                assumenda provident lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
-                                laboriosam sunt hic perspiciatis, asperiores mollitia excepturi voluptatibus sequi
-                                nostrum ipsam veniam omnis nihil! </p>
-                        </div>
-                        <div class="entry-share clearfix">
-                            @include('parties.partageRs')
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
             @forelse ($articles as $p)
             <div class="col-lg-4 col-md-4">
                 <div class="blog-entry mb-50">
@@ -455,8 +381,10 @@
                         <div class="entry-meta mb-10">
                             <ul>
                                 <li> <i class="fa fa-folder-open-o"></i>
-                                    <a href="#">{{ $p->domaine->nom}} </a> </li>
-                                <li><a href="#"><i class="fa fa-calendar-o"></i>{{ $p->created_at->diffForHumans() }}</a></li>
+                                    <a href="#">{{ $p->domaine->nom}} </a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-calendar-o"></i>{{ $p->created_at->diffForHumans()
+                                        }}</a></li>
                             </ul>
                         </div>
                         <div class="entry-content">
@@ -466,8 +394,8 @@
                         </div>
                         <div class="entry-share clearfix">
                             <div class="entry-button">
-                                <a class="button arrow" href="{{ route('detailBlog',['slug'=>$p->slug]) }}">Voir plus<i class="fa fa-angle-right"
-                                        aria-hidden="true"></i></a>
+                                <a class="button arrow" href="{{ route('detailBlog',['slug'=>$p->slug]) }}">Voir plus<i
+                                        class="fa fa-angle-right" aria-hidden="true"></i></a>
                             </div>
                             @include('parties.partageRs')
                         </div>
@@ -512,10 +440,15 @@
 
             <div class="col-lg-12">
                 <div class="text-center">
-                    <a type="button" class="button button-border icon mb-10 mr-10 mt-lg-5 mt-3" href="{{ route('publications') }}">
+                    <a type="button" class="button button-border icon mb-10 mr-10 mt-lg-5 mt-3"
+                        href="{{ route('publications') }}">
                         Voir plus ... » </a>
                 </div>
             </div>
         </div>
+    </div>
 </section>
+@if(isset($recents) && count($recents) > 0)
+@include("parties.recent")
+@endif
 @endsection

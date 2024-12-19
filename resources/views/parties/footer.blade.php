@@ -72,7 +72,6 @@
             <div class="col-lg-6 col-md-6">
                 <div class="social text-start sm-mt-0 text-md-end xs-mt-20">
                     <ul>
-
                         <li {{ $settings['facebook']==null?'hidden':$settings['facebook'] }}>
                             <a href="{{ $settings['facebook'] }}" target="blank"> <i class="fab fa-facebook"></i> </a>
                         </li>

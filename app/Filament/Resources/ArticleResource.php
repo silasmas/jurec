@@ -85,8 +85,16 @@ class ArticleResource extends Resource
                                 'undo',
                             ])
                             ->columnSpanFull(),
+                        FileUpload::make('pdf')
+                            ->columnSpan(4)
+                            ->directory('pdfArrticle')
+                            ->imageEditor()
+                            ->downloadable()
+                            ->acceptedFileTypes(['application/pdf'])
+                            ->maxSize(9024)
+                            ->previewable(true),
                         FileUpload::make('couverture')
-                            ->columnSpan(6)
+                            ->columnSpan(4)
                             ->directory('couverture')
                             ->imageEditor()
                             ->multiple()
@@ -96,8 +104,9 @@ class ArticleResource extends Resource
                             ->image()
                             ->maxSize(3024)
                             ->previewable(true),
+
                         FileUpload::make('images')
-                            ->columnSpan(6)
+                            ->columnSpan(4)
                             ->directory('articleImages')
                             ->imageEditor()
                             ->multiple()
@@ -107,9 +116,21 @@ class ArticleResource extends Resource
                             ->image()
                             ->maxSize(2024)
                             ->previewable(true),
+                        Toggle::make('is_free')
+                            ->label('Est-il gratuit ou pas')
+                            ->columnSpan(4)
+                            ->onColor('success')
+                            ->offColor('danger')
+                            ->required(),
+                        Toggle::make('is_recent')
+                            ->label('Est recent ou pas')
+                            ->columnSpan(4)
+                            ->onColor('success')
+                            ->offColor('danger')
+                            ->required(),
                         Toggle::make('is_active')
-                            ->label('Active (pour le rendre visible ou pas)')
-                            ->columnSpanFull()
+                            ->label('Active (pour l\'afficher ou pas)')
+                            ->columnSpan(4)
                             ->onColor('success')
                             ->offColor('danger')
                             ->required(),
@@ -133,8 +154,17 @@ class ArticleResource extends Resource
                     ->label('Résumer')
                     ->limit(50)
                     ->searchable(),
+                IconColumn::make('pdf')
+                    ->label('Contient un PDF')
+                    ->boolean(),
+                IconColumn::make('is_recent')
+                    ->label('Est recent')
+                    ->boolean(),
                 IconColumn::make('is_active')
                     ->label('Est active')
+                    ->boolean(),
+                IconColumn::make('is_free')
+                    ->label('Est gratuit')
                     ->boolean(),
                 TextColumn::make('created_at')
                     ->dateTime()

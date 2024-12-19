@@ -7,13 +7,12 @@
     <title>Notification de Message</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
     <style>
-        body {
+       body {
             font-family: Arial, sans-serif;
             background-color: #f9f9f9;
             margin: 0;
             padding: 0;
         }
-
         .email-container {
             max-width: 600px;
             margin: 20px auto;
@@ -22,23 +21,33 @@
             border-radius: 8px;
             overflow: hidden;
         }
-
         .email-header {
             background-color: #458630;
             color: white;
             padding: 20px;
             text-align: center;
         }
-
         .email-header img {
             max-width: 150px;
             margin-bottom: 10px;
         }
-
         .email-content {
             padding: 20px;
         }
-
+        .email-content .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #458630;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .email-content .btn:hover {
+            background-color: #0056b3;
+        }
         .email-footer {
             background-color: #f1f1f1;
             text-align: center;
@@ -46,24 +55,13 @@
             font-size: 14px;
             color: #555;
         }
-
         .social-icons {
             margin-top: 10px;
         }
-
         .social-icons img {
             width: 24px;
             margin: 0 5px;
             vertical-align: middle;
-        }
-
-        a {
-            color: #458630;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>

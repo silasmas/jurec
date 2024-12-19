@@ -14,6 +14,7 @@ class StatsOverview extends BaseWidget
         return [
             Stat::make('Total Articles', value: article::all()->count())->icon('heroicon-o-globe-alt'),
 
+            Stat::make('Articles recent', article::where("is_recent", true)->get()->count()),
             Stat::make('Articles non publié', article::where("is_active", false)->get()->count()),
             Stat::make('Article Publié', article::where("is_active", true)->get()->count()),
         ];

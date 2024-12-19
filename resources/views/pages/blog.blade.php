@@ -29,9 +29,9 @@
                                         @forelse($a->couverture as $value)
                                         <div class="item">
                                             <img class="img-fluid" src="{{ asset('storage/'.$value) }}" alt="">
-                                        </div>                                            
+                                        </div>
                                         @empty
-                                            
+
                                         @endforelse
                                     </div>
                                 </div>
@@ -42,9 +42,13 @@
                                     </div>
                                     <div class="entry-meta mb-10">
                                         <ul>
-                                            <li> <i class="fa fa-folder-open-o"></i> 
+                                            <li> <i class="fa fa-folder-open-o"></i>
                                                 <a href="#">{{ $a->domaine->nom}} </a> </li>
                                             <li><a href="#"><i class="fa fa-calendar-o"></i>{{ $a->created_at->diffForHumans() }}</a></li>
+                                            @if($a->pdf!="" && $a->is_free==true)
+                                            <li><a href="#" name="{{ asset('storage/'.$a->pdf) }}" id="download-pdf" class="button black icon medium"><i class="fas fa-file-pdf"></i> Télécharger le PDF</a></li>
+
+                                            @endif
                                         </ul>
                                     </div>
                                     <div class="entry-content">
@@ -60,11 +64,11 @@
                                 </div>
                             </div>
                         </div>
-                    </li>                        
+                    </li>
                     @empty
-                        
+
                     @endforelse
-                    
+
                     <li class="entry-date-bottom"> <a href="#">Load more...</a></li>
                     <!-- =========================================== -->
                     <li class="clearfix timeline-inverted" style="float: none;"></li>
