@@ -396,7 +396,7 @@ $titre="";
                                     </a>
                                 </li>
                                 @if($p->pdf!="" && $p->is_free==true)
-                                <li><a href="#" name="{{ asset('storage/'.$a->pdf) }}" id="download-pdf"
+                                <li><a href="#" name="{{ asset('storage/'.$p->pdf) }}" id="download-pdf"
                                         class="icon medium"><i class="fas fa-file-pdf"></i> Télécharger le
                                         PDF</a></li>
                             
