@@ -69,10 +69,11 @@
                                                             </a>
                                                         </li>
                                                         @if($p->pdf!="" && $p->is_free==true)
-                                                        <li><a href="#" name="{{ asset('storage/'.$p->pdf) }}" id="download-pdf"
-                                                                class="icon medium"><i class="fas fa-file-pdf"></i> Télécharger le
+                                                        <li><a href="#" name="{{ asset('storage/'.$p->pdf) }}"
+                                                                id="download-pdf" class="icon medium"><i
+                                                                    class="fas fa-file-pdf"></i> Télécharger le
                                                                 PDF</a></li>
-                                                    
+
                                                         @endif
                                                     </ul>
                                                 </div>
@@ -126,3 +127,4 @@
         </div>
     </div>
 </div>
+

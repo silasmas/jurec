@@ -29,7 +29,7 @@
                                         <a href="{{ route('about') }}">A propos</a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0)">Expertises
+                                        <a href="javascript:void(0)">Nos thematiques
                                             <i class="fa fa-angle-down fa-indicator"></i>
                                         </a>
                                         <!-- drop down multilevel  -->

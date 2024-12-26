@@ -1,6 +1,7 @@
 </div>
 <div id="back-to-top"><a class="top arrow" href="#top"><i class="fa fa-angle-up"></i> <span>TOP</span></a></div>
 
+@include("parties.modale")
 <!--=================================
  jquery -->
 
@@ -37,8 +38,33 @@
 
 <script src="{{ asset('assets/custom/sweetalert2/dist/sweetalert2.all.min.js') }}"></script>
 
-
 <script>
+    //  const textContent = document.getElementById("textContent");
+    // const toggleTextBtn = document.getElementById("toggleTextBtn");
+
+    // // Texte d'origine et texte tronqué
+    // const originalText = textContent.textContent.trim();
+    // const truncatedText = originalText.slice(0, 250) + "…";
+
+    // // Initialisation
+    // let isExpanded = false;
+    // textContent.textContent = truncatedText;
+
+    // // Fonction de bascule
+    // toggleTextBtn.addEventListener("click", () => {
+    //     if (isExpanded) {
+    //         textContent.textContent = truncatedText;
+    //         toggleTextBtn.innerHTML = 'Voir plus <i class="fa fa-angle-right"></i>';
+    //     } else {
+    //         textContent.textContent = originalText;
+    //         toggleTextBtn.innerHTML = 'Voir moins <i class="fa fa-angle-up"></i>';
+    //     }
+    //     isExpanded = !isExpanded;
+    // });
+
+  </script>
+<script>
+
     function add(form, mothode, url) {
         var csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
         var f = form;
@@ -169,7 +195,7 @@ function copyToClipboard(text) {
 //     function xShared(titre){
 //         var LinkTextToShare = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(document.URL) + '&text=' + encodeURIComponent(titre) ;
 //         window.open(LinkTextToShare,"_blank");
-        
+
 //     }
 
 function whatsappShared(titre) {
