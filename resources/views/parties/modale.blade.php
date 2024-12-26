@@ -2,6 +2,9 @@
     <div class="modal-dialog  modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
+                <div class="feature-step-2-title-left">
+                    <h1>03</h1>
+                </div>
                 <h5 class="modal-title" id="exampleModalLabel">MONITORING</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <hr>
@@ -42,6 +45,25 @@
                     de l’environnement et l’exploitation durable des ressources naturelles. L’Organisation
                     facilite des processus, le rapportage et la modération des activités (atelier,
                     conférence, forum, etc.) nationales qu’internationales.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModalAbout" tabindex="-1" aria-labelledby="exampleModalAboutLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">QUI SOMMES-NOUS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <hr>
+            </div>
+            <div class="modal-body">
+                <p>
+                    {!! $about->description !!}
                 </p>
             </div>
             <div class="modal-footer">

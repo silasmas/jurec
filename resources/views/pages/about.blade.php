@@ -72,8 +72,9 @@
                                 <div class="acd-des">
                                     {{-- <h2 class="title-effect">Apprenez à mieux nous connaître.</h2> --}}
                                     <p>
-                                        {!! $about->description !!}
+                                        {!! Str::limit($about->description , 200, '...')  !!}
                                     </p>
+                                    <button class="button icon-color white" data-bs-toggle="modal" data-bs-target="#exampleModalAbout" > Voir plus<i class="fa fa-angle-right"></i></button>
                                 </div>
                             </div>
                             <div class="acd-group">
