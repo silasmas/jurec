@@ -28,20 +28,20 @@
         <h6 class="mt-40 mb-20">Archives</h6>
         <ul class="widget-categories">
             @forelse ($projets as $p)
-            <li><a href="{{ route('detailProjet',['slug'=>$p->slug]) }}"><i class="fa fa-angle-double-right"></i> {{ $p->created_at->format("F Y") }}</a></li>                
+            <li><a href="{{ route('detailProjet',['slug'=>$p->slug]) }}"><i class="fa fa-angle-double-right"></i> {{ $p->created_at->format("F Y") }}</a></li>
             @empty
-                
+
             @endforelse
         </ul>
     </div> --}}
-    <div class="sidebar-widget">
+    {{-- <div class="sidebar-widget">
         <h6 class="mt-40 mb-20">Tags</h6>
         <div class="widget-tags">
             <ul>
                 <li><a href="#">Bootstrap</a></li>
             </ul>
         </div>
-    </div>
+    </div> --}}
     {{-- <div class="sidebar-widget">
         <h6 class="mt-40 mb-20">Quick contact</h6>
         <form class="gray-form">
@@ -69,14 +69,14 @@
                         <img class="img-fluid" src="{{ asset('storage/'.$pg) }}" alt="">
                     </a>
                 </li>
-                    
+
                 @empty
-                    
+
                 @endforelse
                 @empty
-                    
+
                 @endforelse
-              
+
             </ul>
         </div>
     </div>

@@ -3,7 +3,9 @@
 
 @section("content")
 @include("parties.banner")
-
+@php
+$titre=$projet->titre;
+@endphp
 <section class="blog blog-single white-bg page-section-ptb">
     <div class="container">
         <div class="row">
@@ -49,7 +51,7 @@
                 <div class="blog-entry entry-content mt-20 mb-30 post-1 clearfix">
                     <div class="entry-share clearfix">
                         <div class="tags">
-                            
+
                         </div>
                         @include('parties.partageRs')
 
@@ -71,7 +73,7 @@
                             </a>
                         </div>
                     </div>
-                        
+
                     @endif
                     @if($apres!=null)
                     <div class="port-navigation-right float-end">
@@ -86,7 +88,7 @@
                                 </div>
                             </a>
                         </div>
-                    </div>                        
+                    </div>
                     @endif
                 </div>
 
