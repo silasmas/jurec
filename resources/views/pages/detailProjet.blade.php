@@ -65,7 +65,7 @@ $titre=$projet->titre;
                             data-placement="right">
                             <a href="{{ route('detailProjet',['slug'=>$avant->slug]) }}">
                                 <div class="port-photo float-start">
-                                    <img src="{{ asset('storage/'.$avant->couverture[0]) }}" alt="">
+                                    <img height="100" width="100" src="{{ asset('storage/'.$avant->couverture[0]) }}" alt="">
                                 </div>
                                 <div class="port-arrow">
                                     <i class="fa fa-angle-left"></i>
@@ -84,7 +84,7 @@ $titre=$projet->titre;
                                     <i class="fa fa-angle-right"></i>
                                 </div>
                                 <div class="port-photo">
-                                    <img src="{{ asset('storage/'.$apres->couverture[0]) }}" alt="">
+                                    <img height="100" width="100" src="{{ asset('storage/'.$apres->couverture[0]) }}" alt="">
                                 </div>
                             </a>
                         </div>
