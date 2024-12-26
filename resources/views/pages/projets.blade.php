@@ -34,7 +34,7 @@
                         </div>
                         <div class="entry-meta mb-10">
                             <ul>
-                                <li> <i class="fa fa-folder-open-o"></i> 
+                                <li> <i class="fa fa-folder-open-o"></i>
                                     <a href="#">{{ $p->categorie->nom}} </a> </li>
                                 <li><a href="#"><i class="fa fa-calendar-o"></i>{{ $p->created_at->diffForHumans() }}</a></li>
                             </ul>
@@ -46,7 +46,7 @@
                             <a class="button arrow" href="{{ route('detailProjet',['slug'=>$p->slug]) }}">Voir plus<i class="fa fa-angle-right"
                                     aria-hidden="true"></i></a>
                         </div>
-                        @include("parties.partageRs")
+                        {{-- @include("parties.partageRs") --}}
                         {{-- <div class="entry-share clearfix">
                             <div class="entry-button">
                                 <a class="button arrow" href="#">Read More<i class="fa fa-angle-right"
