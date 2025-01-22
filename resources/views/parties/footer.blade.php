@@ -42,7 +42,7 @@
                         </div>
                         <div class="contact-info">
                             <div class="text-center">
-                                <h5 class="mt-10 mb-10">{{ $setting->support_phone }}</h5>
+                                <h5 class="mt-10 mb-10">{{ $setting?->support_phone }}</h5>
                                 <span>Lundi-Vendredi 8h30'-16h30'</span>
                             </div>
                         </div>
@@ -55,7 +55,7 @@
                         </div>
                         <div class="contact-info">
                             <div class="text-center">
-                                <h5 class="mt-10 mb-10">{{ $setting->support_email}}</h5>
+                                <h5 class="mt-10 mb-10">{{ $setting?->support_email}}</h5>
                                 <span>Aux heures de service</span>
                             </div>
                         </div>
@@ -65,26 +65,24 @@
         </div>
         <div class="row top">
             <div class="col-lg-6 col-md-6">
-                <img class="img-fluid" id="logo-footer" src="{{ asset('storage/'.$setting->site_logo) }}"
+                <img class="img-fluid" id="logo-footer" src="{{ asset('storage/'.$setting?->site_logo) }}"
                 style="height:90px; width:350px" alt="">
             </div>
 
             <div class="col-lg-6 col-md-6">
                 <div class="social text-start sm-mt-0 text-md-end xs-mt-20">
                     <ul>
-                        <li {{ $settings['facebook']==null?'hidden':$settings['facebook'] }}>
-                            <a href="{{ $settings['facebook'] }}" target="blank"> <i class="fab fa-facebook"></i> </a>
+                        <li {{ setings($settings,"facebook")==""?'hidden':setings($settings,"facebook") }}>
+                            <a href="{{setings($settings,"facebook") }}" target="blank"> <i class="fab fa-facebook"></i> </a>
                         </li>
-                        <li {{ $settings['x_twitter']==null?'hidden':$settings['x_twitter'] }}>
-                            <a href="{{ $settings['x_twitter'] }}" target="blank"> <i class="fab fa-x"></i> </a>
+                        <li {{ setings($settings,"x_twitter")==""?'hidden':setings($settings,"x_twitter") }}>
+                            <a href="{{setings($settings,"x_twitter") }}" target="blank"> <i class="fab fa-x"></i> </a>
                         </li>
-
-                        <li {{ $settings['instagram']==null?'hidden':$settings['instagram'] }}>
-                            <a href="{{ $settings['instagram'] }}" target="blank"> <i class="fab fa-instagram"></i> </a>
+                        <li {{ setings($settings,"instagram")==""?'hidden':setings($settings,"instagram") }}>
+                            <a href="{{setings($settings,"instagram") }}" target="blank"> <i class="fab fa-instagram"></i> </a>
                         </li>
-
-                        <li {{ $settings['youtube']==null?'hidden':$settings['youtube'] }}>
-                            <a href="{{ $settings['youtube'] }}" target="blank"> <i class="fab fa-youtube"></i> </a>
+                        <li {{ setings($settings,"youtube")==""?'hidden':setings($settings,"youtube") }}>
+                            <a href="{{setings($settings,"youtube") }}" target="blank"> <i class="fab fa-youtube"></i> </a>
                         </li>
                     </ul>
                 </div>
@@ -102,7 +100,7 @@
                 <div class="about-content">
                     <h6 class="mb-20 text-uppercase">A propos</h6>
                     <p>
-                        {{ $setting->site_description }}
+                        {{ $setting?->site_description }}
                     </p>
                 </div>
             </div>

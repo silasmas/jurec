@@ -144,6 +144,94 @@ $titre="";
                             alt="" data-ww="598px" data-hh="324px" data-no-retina>
                     </div>
                 </li>
+                <!-- SLIDE  -->
+                <li data-index="rs-766" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+                    data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
+                    data-thumb="revolution/assets/slider-06/100x50_c81f3-ac32d-bg.jpg" data-delay="8000" data-rotate="0"
+                    data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3=""
+                    data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
+                    data-param10="" data-description="">
+                    <!-- MAIN IMAGE -->
+                    <img src="{{ asset('assets/revolution/assets/slider-06/c81f3-ac32d-bg.jpg') }}" alt=""
+                        data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg"
+                        data-no-retina>
+                    <!-- LAYERS -->
+
+                    <!-- LAYER NR. 18 -->
+                    <div class="tp-caption tp-resizeme" id="slide-765-layer-1" data-x="center" data-hoffset=""
+                        data-y="center" data-voffset="10" data-width="['auto']" data-height="['auto']" data-type="text"
+                        data-responsive_offset="on"
+                        data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                        style="z-index: 5; white-space: nowrap; font-size: 90px; line-height: 100px; font-weight: 400; color: #0a0a0a; letter-spacing: 0px;font-family:Montserrat;">
+                        Accompagnement des communautés locales et peuples autochtones riveraines des ressources naturelles.</b> </div>
+
+                    <!-- LAYER NR. 19 -->
+                    <a class="tp-caption rev-btn tp-resizeme rev-button" href="{{ route('about') }}" target="_self"
+                        id="slide-765-layer-3" data-x="800" data-y="585" data-width="['auto']" data-height="['auto']"
+                        data-type="button" data-actions='' data-responsive_offset="on"
+                        data-frames='[{"delay":2220,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power0.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(10,10,10);bc:rgb(10,10,10);bs:solid;bw:0 0 0 0;"}]'
+                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]"
+                        data-paddingright="[30,30,30,30]" data-paddingbottom="[12,12,12,12]"
+                        data-paddingleft="[30,30,30,30]"
+                        style="z-index: 6; white-space: nowrap; font-size: 12px; line-height: 22px; font-weight: 700; color: rgba(255,255,255,1); font-family:Montserrat;text-transform:uppercase;background-color:rgb(132,186,63);border-color:rgba(0,0,0,1);border-radius:3px 3px 3px 3px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;text-decoration: none;">
+                        A propos
+                    </a>
+
+                    <!-- LAYER NR. 20 -->
+                    <a class="tp-caption tp-resizeme" href="{{ route('domaines') }}" target="_self"
+                        id="slide-765-layer-4" data-x="970" data-y="585" data-width="['auto']" data-height="['auto']"
+                        data-type="button" data-actions='' data-responsive_offset="on"
+                        data-frames='[{"delay":2770,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":270,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power0.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(10,10,10);"}]'
+                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]"
+                        data-paddingright="[30,30,30,30]" data-paddingbottom="[12,12,12,12]"
+                        data-paddingleft="[30,30,30,30]"
+                        style="z-index: 7; white-space: nowrap; font-size: 12px; line-height: 18px; font-weight: 700; color: #0a0a0a; font-family:Montserrat;text-transform:uppercase;background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,1);border-style:solid;border-width:2px 2px 2px 2px;border-radius:3px 3px 3px 3px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;text-decoration: none;">
+                        Domaines d'expertise </a>
+
+
+                    <!-- LAYER NR. 21 -->
+                    <div class="tp-caption tp-resizeme" id="slide-765-layer-5" data-x="" data-y=""
+                        data-width="['none','none','none','none']" data-height="['none','none','none','none']"
+                        data-type="image" data-responsive_offset="on"
+                        data-frames='[{"delay":100,"speed":3000,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                        style="z-index: 8;"><img src="{{ asset('assets/revolution/assets/slider-06/17988-plan.png') }}"
+                            alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
+
+                    <!-- LAYER NR. 22 -->
+                    <div class="tp-caption tp-resizeme" id="slide-765-layer-6" data-x="30" data-y="bottom"
+                        data-voffset="-2" data-width="['none','none','none','none']"
+                        data-height="['none','none','none','none']" data-type="image" data-responsive_offset="on"
+                        data-frames='[{"delay":280,"speed":3000,"frame":"0","from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                        style="z-index: 9;"><img src="{{ asset('assets/revolution/assets/slider-06/bb88b-plant.png') }}"
+                            alt="" data-ww="483px" data-hh="518px" data-no-retina> </div>
+
+                    <div class="tp-caption tp-resizeme" id="slide-765-layer-8" data-x="right" data-hoffset="10"
+                        data-y="423" data-width="['none','none','none','none']"
+                        data-height="['none','none','none','none']" data-type="image" data-responsive_offset="on"
+                        data-frames='[{"delay":100,"speed":3000,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                        style="z-index: 11;"><img
+                            src="{{ asset('assets/revolution/assets/slider-06/bb88b-plant.png') }}" alt=""
+                            data-ww="426px" data-hh="439px" data-no-retina> </div>
+
+                    <!-- LAYER NR. 25 -->
+                    <div class="tp-caption tp-resizeme" id="slide-765-layer-9" data-x="right" data-hoffset="-11"
+                        data-y="" data-width="['none','none','none','none']" data-height="['none','none','none','none']"
+                        data-type="image" data-responsive_offset="on"
+                        data-frames='[{"delay":280,"speed":3000,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                        style="z-index: 12;"><img src="{{ asset('assets/revolution/assets/slider-06/17988-plan.png') }}"
+                            alt="" data-ww="598px" data-hh="324px" data-no-retina>
+                    </div>
+                </li>
 
             </ul>
             <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
@@ -161,9 +249,9 @@ $titre="";
         <div class="row justify-content-center">
             <div class="col-lg-8 col-md-8">
                 <div class="text-center section-title">
-                    <h6>A propos</h6>
-                    <h2 class="title-effect">C'est quoi JUREC ?</h2>
-                    <p>cette rubrique vous présente qui sommes nous afin de mieux interagire avec nous.</p>
+                    {{-- <h6></h6> --}}
+                    <h2 class="title">A propos de nous</h2>
+                    {{-- <p>cette rubrique vous présente qui sommes nous afin de mieux interagire avec nous.</p> --}}
                 </div>
             </div>
         </div>
@@ -172,22 +260,24 @@ $titre="";
                 <div class="who-we-are-left">
                     <div class="owl-carousel" data-nav-dots="true" data-items="1" data-md-items="1" data-sm-items="1"
                         data-xs-items="1" data-xx-items="1">
+                        @if(!empty($about->couverture))
                         @forelse ($about->couverture as $ab)
                         <div class="item"><img class="img-fluid full-width" src="{{ asset('storage/'.$ab) }}" alt="">
                         </div>
                         @empty
 
                         @endforelse
+                        @endif
                     </div>
                 </div>
 
             </div>
             <div class="col-lg-6 sm-mt-30">
                 <div class="section-title">
-                    <h6>{{$about->titre}}</h6>
-                    <h2 class="title-effect">Apprenez à mieux nous connaître.</h2>
-                    <p>
-                        {{$about->resume}}
+                    {{-- <h6>{{$about->titre??""}}</h6>
+                    <h2 class="title-effect">Apprenez à mieux nous connaître.</h2> --}}
+                    <p class="mt-10">
+                        {{$about->resume??""}}
                     </p>
                 </div>
                 <p> </p>
@@ -399,7 +489,7 @@ $titre="";
                                 <li><a href="#" name="{{ asset('storage/'.$p->pdf) }}" id="download-pdf"
                                         class="icon medium"><i class="fas fa-file-pdf"></i> Télécharger le
                                         PDF</a></li>
-                            
+
                                 @endif
                             </ul>
                         </div>

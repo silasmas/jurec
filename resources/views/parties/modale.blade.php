@@ -63,7 +63,7 @@
             </div>
             <div class="modal-body">
                 <p>
-                    {!! $about->description !!}
+                    {!! $about?->description !!}
                 </p>
             </div>
             <div class="modal-footer">
