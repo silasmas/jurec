@@ -46,7 +46,7 @@ $titre="";
                         Qui sommes-nous </a>
 
                     <!-- LAYER NR. 6 -->
-                    <a class="tp-caption tp-resizeme" href="{{ route('services') }}" target="_self"
+                    <a class="tp-caption tp-resizeme ms-3" href="{{ route('services') }}" target="_self"
                         id="slide-764-layer-26" data-x="979" data-y="340" data-width="['auto']" data-height="['auto']"
                         data-type="button" data-actions='' data-responsive_offset="on"
                         data-frames='[{"delay":3410,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power0.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(10,10,10);"}]'
@@ -164,11 +164,12 @@ $titre="";
                         data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                         data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
                         data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                        style="z-index: 5; white-space: nowrap; font-size: 90px; line-height: 100px; font-weight: 400; color: #0a0a0a; letter-spacing: 0px;font-family:Montserrat;">
-                        Accompagnement des communautés locales et peuples autochtones riveraines des ressources naturelles.</b> </div>
+                        style="z-index: 5; font-size: 70px; line-height: 100px; font-weight: 400; color: #0a0a0a; letter-spacing: 0px;font-family:Montserrat;">
+                        Accompagnement des communautés <br>locales et peuples autochtones riveraines <br>
+                        des ressources naturelles.</b> </div>
 
                     <!-- LAYER NR. 19 -->
-                    <a class="tp-caption rev-btn tp-resizeme rev-button" href="{{ route('about') }}" target="_self"
+                    <a class="tp-caption rev-btn tp-resizeme rev-button mt-30" href="{{ route('about') }}" target="_self"
                         id="slide-765-layer-3" data-x="800" data-y="585" data-width="['auto']" data-height="['auto']"
                         data-type="button" data-actions='' data-responsive_offset="on"
                         data-frames='[{"delay":2220,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power0.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(10,10,10);bc:rgb(10,10,10);bs:solid;bw:0 0 0 0;"}]'
@@ -180,7 +181,7 @@ $titre="";
                     </a>
 
                     <!-- LAYER NR. 20 -->
-                    <a class="tp-caption tp-resizeme" href="{{ route('domaines') }}" target="_self"
+                    <a class="tp-caption tp-resizeme mt-30" href="{{ route('domaines') }}" target="_self"
                         id="slide-765-layer-4" data-x="970" data-y="585" data-width="['auto']" data-height="['auto']"
                         data-type="button" data-actions='' data-responsive_offset="on"
                         data-frames='[{"delay":2770,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":270,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power0.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(10,10,10);"}]'
@@ -393,8 +394,8 @@ $titre="";
         <div class="row">
             <div class="col-lg-12 col-md-12">
                 <div class="text-center section-title">
-                    <h6 class="text-white">Rien n'est plus important que des réalisations</h6>
-                    <h2 class="text-white title-effect dark">Nos projets </h2>
+                    {{-- <h6 class="text-white">Rien n'est plus important que des réalisations</h6> --}}
+                    <h2 class="text-white title dark">Nos projets </h2>
                 </div>
             </div>
         </div>
@@ -442,7 +443,7 @@ $titre="";
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-8">
                     <div class="text-center section-title">
-                        <h2 class="title-effect">Nos publications</h2>
+                        <h2 class="title">Nos publications</h2>
                         <p>Nous publions sur nos réalisations et nos articles</p>
                     </div>
                 </div>
