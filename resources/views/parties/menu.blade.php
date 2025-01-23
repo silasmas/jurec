@@ -15,27 +15,27 @@
                             <ul class="menu-logo">
                                 <li>
                                     <a href="#">
-                                        <img id="logo_img" style="height:60px; width:280px"
-                                            src="{{ asset('storage/'.$setting->site_logo) }}" alt="logo">
+                                        <img id="logo_img"
+                                            src="{{ asset('storage/'.$setting?->site_logo) }}" alt="logo">
                                     </a>
                                 </li>
                             </ul>
                             <!-- menu links -->
                             <div class="menu-bar">
                                 <ul class="menu-links">
-                                    <li><a href="{{ route('home') }}">Home</a>
+                                    <li><a href="{{ route('home') }}" class="text-dark">Home</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('about') }}">A propos</a>
+                                        <a href="{{ route('about') }}" class="text-dark">A propos</a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0)">Nos thematiques
+                                        <a href="javascript:void(0)" class="text-dark">Nos thematiques
                                             <i class="fa fa-angle-down fa-indicator"></i>
                                         </a>
                                         <!-- drop down multilevel  -->
                                         <ul class="drop-down-multilevel">
                                             <li>
-                                                <a href="{{ route('services') }}">Services <i
+                                                <a href="{{ route('services') }}" >Services <i
                                                         class="ti-plus fa-indicator"></i>
                                                 </a>
                                                 <!-- drop down second level -->
@@ -48,7 +48,7 @@
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="{{ route('domaines') }}">Domaine d'activités
+                                                <a href="{{ route('domaines') }}" >Domaines d'intervention
                                                     <i class="ti-plus fa-indicator"></i>
                                                 </a>
                                                 <!-- drop down second level -->
@@ -62,11 +62,11 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{ route('projets') }}">Nos projets</a>
+                                    <li><a href="{{ route('projets') }}" class="text-dark">Nos projets</a>
                                     </li>
-                                    <li><a href="{{ route('publications') }}">Nos publications</a>
+                                    <li><a href="{{ route('publications') }}" class="text-dark">Nos publications</a>
                                     </li>
-                                    <li><a href="{{ route('contact') }}">Contact</a>
+                                    <li><a href="{{ route('contact') }}" class="text-dark">Contact</a>
                                     </li>
                                 </ul>
                                 {{-- <div class="search-cart">

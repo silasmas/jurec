@@ -18,6 +18,11 @@ return new class extends Migration
             $table->longText('description')->nullable();
             $table->string('couverture')->nullable();
             $table->json('images')->nullable();
+            $table->integer('is_active')->default(0);
+            $table->integer('is_recent')->default(0);
+            $table->integer('is_free')->default(0);
+            $table->string('pdf')->nullable();
+
             $table->foreignId('domaine_id')->constrained('domaines')->cascadeOnDelete();
             $table->timestamps();
         });

@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('sexe')->nullable();
             $table->string(column: 'poste');
             $table->string(column: 'profil');
+            $table->integer('is_active')->default(0);
             $table->longText(column: 'biographie')->nullable();
             $table->string(column: 'fb')->nullable();
             $table->string(column: 'youtube')->nullable();

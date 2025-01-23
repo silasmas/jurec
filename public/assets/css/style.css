@@ -7742,6 +7742,7 @@ body.modal-open .mega-menu.desktopTopFixed .menu-list-items {
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
+
 }
 
 .mega-menu .menu-links > li.active .drop-down-multilevel a {
@@ -8180,7 +8181,8 @@ body.modal-open .mega-menu.desktopTopFixed .menu-list-items {
   color: #323232;
 }
 
-.header.light .mega-menu .menu-links > li > a {
+.header.light .mega-menu .menu-links > li > a,
+.header.dark .mega-menu .menu-links > li > a {
   color: #323232;
 }
 

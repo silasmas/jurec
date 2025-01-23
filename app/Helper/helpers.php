@@ -8,6 +8,17 @@ if (!function_exists('format_date')) {
         return \Carbon\Carbon::parse($date)->format('d/m/Y');
     }
 }
+if (!function_exists('setings')) {
+    function setings($settings, $cle)
+    {
+        if ($settings !== null && array_key_exists('facebook', $settings)) {
+            $settings = $settings[$cle];
+        } else {
+            $settings = '';
+        }
+        return $settings;
+    }
+}
 if (!function_exists('bySlug')) {
     function bySlug($slug, $table)
     {

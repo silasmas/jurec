@@ -55,8 +55,9 @@ class ViewServiceProvider extends ServiceProvider
             $partenaires = Partenaire::where('is_active', true)->get();
 
 
-            $st = json_decode($settings->social_network, true);
-            // dd($projets[0]->Formatted_created_at->format('d'));
+            $st = json_decode($settings->social_network?? '{}', true);
+
+            // dd( $settings);
             $view->with('title', $titre);
             $view->with('settings', $st);
             $view->with('setting', $settings);

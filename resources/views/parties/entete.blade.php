@@ -13,7 +13,7 @@
 <title>{{ config('app.name')}} | {{ isset($titre)?$titre:"" }}</title>
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="{{ asset('storage/'.$setting->site_favicon) }}" />
+<link rel="shortcut icon" href="{{ asset('storage/'.$setting?->site_favicon) }}" />
 
 <!-- font -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900">
@@ -42,6 +42,24 @@
 
 <link rel="stylesheet" href="{{ asset('assets/custom/sweetalert2/dist/sweetalert2.min.css') }}">
 @yield("style")
+
+<style>
+    a.text-dark:hover {
+        color: #84BA3F!important;
+    }
+    #logo_img{
+        width:280px;
+        height: 50px;
+    }
+
+    @media screen and (max-width: 991px) {
+        .mega-menu .menu-logo > li img {
+            width: 100% !important;
+            height: 40px !important;
+        }
+    }
+
+</style>
 </head>
 
 <body>
