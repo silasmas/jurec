@@ -45,26 +45,26 @@ class ProjetResource extends Resource
                         Select::make('categorie_id')
                             ->label(label: 'Catégorie')
                             ->searchable()
-                            ->columnSpan(4)
+                            ->columnSpan(6)
                             ->preload()
                             ->required()
                             ->relationship('categorie', 'nom'),
                         TextInput::make('titre')
                             ->required()
-                            ->columnSpan(4)
+                            ->columnSpan(6)
                             ->maxLength(255)
                             ->live(onBlur: true)
                             ->afterStateUpdated(fn(string $operation, $state, Set $set) =>
                             $operation === 'create' || $operation === 'edit' ? $set('slug', Str::slug($state)) : null),
                         TextInput::make('slug')
-                            ->columnSpan(4)
+                            ->columnSpan(6)
                             ->disabled()
                             ->dehydrated()
                             ->required()
                             ->maxLength(255)
                             ->unique(projet::class, 'slug', ignoreRecord: true),
                         TextInput::make('resume')
-                            ->columnSpan(4)
+                            ->columnSpan(6)
                             ->required()
                             ->maxLength(255),
                         RichEditor::make('description')
@@ -83,6 +83,13 @@ class ProjetResource extends Resource
                                 'strike',
                                 'underline',
                                 'undo',
+                                'paragraph', // Gestion de paragraphe
+                                'heading',   // Gestion des titres
+                                'textSize',  // Taille des textes
+                                'alignLeft', // Alignement du texte
+                                'alignCenter',
+                                'alignRight',
+                                'alignJustify',
                             ])
                             ->columnSpanFull(),
                         FileUpload::make('couverture')

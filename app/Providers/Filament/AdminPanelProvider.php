@@ -12,6 +12,7 @@ use Awcodes\LightSwitch\LightSwitchPlugin;
 use Filament\Http\Middleware\Authenticate;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Cookie\Middleware\EncryptCookies;
+use GeoSot\FilamentEnvEditor\FilamentEnvEditorPlugin;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
@@ -102,11 +103,22 @@ class AdminPanelProvider extends PanelProvider
                     ->canAccess(fn() => auth()->user()->id === 1)
                     ->setSort(3)
                     ->setIcon('heroicon-o-cog')
-                    ->setNavigationGroup('Settings')
-                    ->setTitle('General Settings')
-                    ->setNavigationLabel('General Settings'),
+                    ->setNavigationGroup('Paramètres')
+                    ->setTitle('Paramètres généraux')
+                    ->setNavigationLabel('Paramètres généraux'),
                 LightSwitchPlugin::make()
                     ->position(Alignment::TopRight),
-            ]);
+            ])->plugin(
+                FilamentEnvEditorPlugin::make()
+                ->navigationGroup('Outils système')
+                ->navigationLabel('My Env')
+                ->navigationIcon('heroicon-o-cog-8-tooth')
+                ->navigationSort(1)
+                ->slug('env-editor')
+                ->hideKeys('APP_KEY', 'BCRYPT_ROUNDS')
+                // ->authorize(
+                //     fn () => auth()->user()->isAdmin()
+                // )
+            );
     }
 }
