@@ -1,14 +1,14 @@
 <div class="col-lg-3 ">
 
-    <div class="sidebar-widget">
+    {{-- <div class="sidebar-widget">
         <h6 class="mt-40 mb-20">Concernant nos projets</h6>
         <p>We are the <strong> webster </strong> dolor sit ametLorem Ipsum Proin gravida nibh vel velit
             auctor aliquet. Aenean sollicitudin, <br /> <br />
             Consequat ipsum, nec sagittis sem nibh id elit nibh vel velit auctor aliquet. sem nibh Aenean
             sollicitudin, </p>
-    </div>
+    </div> --}}
     <div class="sidebar-widget">
-        <h6 class="mt-40 mb-20">Recent Posts </h6>
+        <h6 class="mt-40 mb-20">Nos projets </h6>
 
         @forelse ($recentProjets as $recent)
         <div class="recent-post clearfix">
