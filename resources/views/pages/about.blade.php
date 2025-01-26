@@ -40,8 +40,8 @@
         <div class="row justify-content-center">
             <div class="col-lg-8 col-md-8">
                 <div class="text-center section-title">
-                    <h6>A propos</h6>
-                    <h2 class="title-effect">C'est quoi JUREC ?</h2>
+                    <h6></h6>
+                    <h2 class="title">A propos</h2>
                 </div>
             </div>
         </div>
@@ -190,8 +190,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-8">
                     <div class="text-center section-title">
-                        <h2 class="title-effect">Nos publications</h2>
-                        <p>Nous publions sur nos réalisations et nos articles</p>
+                        <h2 class="title">Nos publications</h2>
+                        {{-- <p>Nous publions sur nos réalisations et nos articles</p> --}}
                     </div>
                 </div>
             </div>

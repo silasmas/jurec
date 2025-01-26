@@ -11,9 +11,9 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="section-title text-center">
-                    <h6>Nous sommes spécialiser à </h6>
-                    <h2 class="title-effect">Nos Services</h2>
-                    <p>Nous ferons tout notre possible pour réaliser notre prochain meilleur projet !</p>
+                    {{-- <h6>Nous sommes spécialiser à </h6> --}}
+                    <h2 class="title">Nos Services</h2>
+                    {{-- <p>Nous ferons tout notre possible pour réaliser notre prochain meilleur projet !</p> --}}
                 </div>
             </div>
 
