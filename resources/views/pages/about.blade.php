@@ -161,7 +161,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 feature-step-2 bg-02 bg-overlay-black-50">
+            <div class="col-lg-4 feature-step-2 bg-03 bg-overlay-black-50">
                 <div class="clearfix">
                     <div class="feature-step-2-box">
                         <div class="feature-step-2-title-left">
