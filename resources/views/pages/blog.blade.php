@@ -71,7 +71,7 @@ $titre="";
                                             <li><a href="#" name="{{ asset('storage/'.$a->pdf) }}" id="download-pdf"
                                                     class="icon medium"><i class="fas fa-file-pdf"></i> Télécharger le
                                                     PDF</a></li>
-                                        
+
                                             @endif
                                         </ul>
                                     </div>
@@ -94,7 +94,7 @@ $titre="";
 
                     @endforelse
 
-                    <li class="entry-date-bottom"> <a href="#">Load more...</a></li>
+                    {{-- <li class="entry-date-bottom"> <a href="#">Load more...</a></li> --}}
                     <!-- =========================================== -->
                     <li class="clearfix timeline-inverted" style="float: none;"></li>
                 </ul>
