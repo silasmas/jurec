@@ -389,7 +389,7 @@ $titre="";
   </div>
   </section>
 
-<section class="page-section-ptb bg-overlay-black-80 jarallax" data-speed="0.6" data-img-src="assets/images/bg/06.jpg">
+<section class="page-section-ptb bg-overlay-black-80 jarallax" data-speed="0.6" data-img-src="assets/images/bg/backgroud.jpg">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12">
