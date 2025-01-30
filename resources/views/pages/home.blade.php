@@ -307,7 +307,7 @@ $titre="";
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h2 class="text-uppercase text-white mb-0 text-center">Nous offrons le meilleur service</h2>
+                <h2 class="text-uppercase text-white mb-0 text-center">Nos service</h2>
             </div>
         </div>
     </div>

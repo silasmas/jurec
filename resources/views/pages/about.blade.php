@@ -61,7 +61,7 @@
             </div>
             <div class="col-lg-6 sm-mt-30">
                 <div class="section-title">
-                    <h6>Qui nous sommes et ce que nous faisons</h6>
+                    {{-- <h6>Qui nous sommes et ce que nous faisons</h6> --}}
 
                 </div>
                 <div class="row mt-30">
