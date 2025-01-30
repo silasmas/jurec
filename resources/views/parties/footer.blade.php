@@ -141,7 +141,7 @@
                 <div class="col-md-6">
                     <ul class="text-start">
                         {{-- <li class="list-inline-item"><a href="#">Conditions générales </a> &nbsp;&nbsp;&nbsp;|</li> --}}
-                        <li class="list-inline-item">Designed by<a target="blank" href="silasmas.com"> Sdev </a> </li>
+                        <li class="list-inline-item">Designed by<a target="blank" href="https://silasmas.com"> Sdev </a> </li>
                     </ul>
                 </div>
                 <div class="col-md-6">
