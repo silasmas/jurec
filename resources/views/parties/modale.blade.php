@@ -3,7 +3,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <div class="feature-step-2-title-left">
-                    <h1>03</h1>
+                    <h1>01</h1>
                 </div>
                 <h5 class="modal-title" id="exampleModalLabel">MONITORING</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -34,6 +34,9 @@
     <div class="modal-dialog  modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
+                <div class="feature-step-2-title-left">
+                    <h1>02</h1>
+                </div>
                 <h5 class="modal-title" id="exampleModalLabel">FACILITATION DES PROCESSUS & EXECUTION DES PROJETS</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <hr>

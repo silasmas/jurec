@@ -11111,19 +11111,19 @@ header.one-page.light .navbar.affix {
 }
 
 .feature-step-2.bg-01 {
-  background: url(../images/blog/05.jpg);
+  background: url(..assets/images/bg/Image7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .feature-step-2.bg-02 {
-  background: url(../images/blog/06.jpg);
+  background: url(..assets/images/bg/Image6.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .feature-step-2.bg-03 {
-  background: url(../images/blog/09.jpg);
+  background: url(..assets/images/bg/Image8.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
