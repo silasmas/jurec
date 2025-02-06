@@ -50,12 +50,15 @@
                 </div>
                 <div class="col-lg-6 sm-mt-50 align-self-center">
                     <div class="section-title">
-                        <h2 class="title">{{ $domaine->titre }} </h2>
-                        <span class="badge bg-primary mt-30">
+                        <span class="badge bg-primary mt-10">
                             {{ $domaine->categorie->nom }}
                         </span>
+                        <h2 class="title">{{ $domaine->titre }} </h2>
                     </div>
-                    <p class="mx-auto my-4 p-4 text-justify bg-gray-100 rounded-lg shadow"> {!! $domaine->description !!} </p>
+                    <div  class="mx-auto my-4 p-4 text-justify bg-gray-100 rounded-lg shadow">
+
+                        <p> {!! $domaine->description !!} </p>
+                    </div>
                     <div class="divider my-5"></div>
                     {{-- <div class="row">
                         <div class="col-lg-4 col-sm-4 sm-mb-30">
