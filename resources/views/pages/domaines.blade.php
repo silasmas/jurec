@@ -19,24 +19,26 @@
 
 <section class="mb-80">
     <div class="container">
-      <div class="row">
-        @forelse ($menuDomaine as $domaine)
-        <div class="col-lg-3 col-md-6 col-sm-12 sm-mb-30">
-          <div class="card border-0 theme-bg o-hidden h-100">
-            <div class="badge bg-success">
-                <a href="">{{$domaine->categorie->nom}}</a>
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <h4 class="mb-30">Nos domaines d'intervention </h4>
             </div>
-            <img class="img-fluid" src="{{ asset('storage/'.$domaine->couverture[0]) }}" alt="">
-            <div class="p-4">
-              <h4> <a href="{{ route("detailDomaine",['slug' => $domaine->slug]) }}" class="text-white">{{ $domaine->titre }}</a></h4>
-              <p class="mb-0 pb-0 text-white">{{  $domaine->resume  }}</p>
+            @forelse ($menuDomaine as $domaine)
+            <div class="col-lg-4 col-md-4 sm-mb-30">
+              <div class="card">
+                <img class="card-img-top" src="{{ asset('storage/'.$domaine->couverture[0]) }}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">{{$domaine->titre}}</h5>
+                  <p class="card-text">{{$domaine->resume}}</p>
+                  <a href="{{ route("detailDomaine",['slug' => $domaine->slug]) }}" class="btn btn-primary">Voir en detail</a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        @empty
+            @empty
 
         @endforelse
-    </div>
+         </div>
+
   </section>
 
 

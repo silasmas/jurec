@@ -45,7 +45,7 @@
                                                     @empty
 
                                                     @endforelse
-                                                </ul>
+                                                 </ul>
                                             </li>
                                             <li>
                                                 <a href="{{ route('domaines') }}" >Domaines d'intervention
