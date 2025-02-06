@@ -1,5 +1,5 @@
 
-<section class="page-title bg-overlay-black-60 jarallax" data-speed="0.6" data-img-src="../assets/images/bg/cover.jpg">
+<section class="page-title bg-overlay-black-60 jarallax" data-speed="0.6" data-img-src="../assets/images/bg/backgroud.jpg">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
