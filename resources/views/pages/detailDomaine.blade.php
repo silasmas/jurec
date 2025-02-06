@@ -7,6 +7,35 @@
     text-overflow: ellipsis; /* Ajoute "..." à la fin si le texte dépasse */
     max-width: 100%; /* Assure que le texte ne dépasse pas son conteneur */
 }
+.text-container {
+      position: relative;
+      max-width: 600px;
+      line-height: 1.6;
+      font-family: Arial, sans-serif;
+    }
+
+    .text-content {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3; /* Nombre de lignes visibles */
+      transition: all 0.3s ease-in-out;
+    }
+
+    .text-content.expanded {
+      -webkit-line-clamp: unset; /* Annule la limitation des lignes */
+      overflow: visible;
+    }
+
+    .read-more {
+      cursor: pointer;
+      color: blue;
+      background: none;
+      border: none;
+      font-size: 1rem;
+      margin-top: 5px;
+      text-decoration: underline;
+    }
 </style>
 
 @section('content')
