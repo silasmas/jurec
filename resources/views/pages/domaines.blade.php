@@ -28,8 +28,8 @@
               <div class="card">
                 <img class="card-img-top" src="{{ asset('storage/'.$domaine->couverture[0]) }}" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">{{ Str::limit($domaine->titre, 100, '...') }}</h5>
-                  <p class="card-text"> {{ Str::limit($domaine->resume, 100, '...') }}</p>
+                  <h5 class="card-title">{{ Str::limit($domaine->titre, 50, '...') }}</h5>
+                  <p class="card-text"> {{ Str::limit($domaine->resume, 50, '...') }}</p>
                   <a href="{{ route("detailDomaine",['slug' => $domaine->slug]) }}" class="btn btn-primary">Voir en detail</a>
                 </div>
               </div>
