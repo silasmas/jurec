@@ -181,8 +181,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-8">
                     <div class="section-title text-center text-start">
-                        <h2 class="title-effect">Nos services</h2>
-                        <p>We are dedicated to providing you with the best experience possible.</p>
+                        <h2 class="title">Autres domaines d'intervention</h2>
+                        {{-- <p>We are dedicated to providing you with the best experience possible.</p> --}}
                     </div>
                 </div>
             </div>
