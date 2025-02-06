@@ -60,7 +60,9 @@ class about extends Controller
     public function detailDomaine($slug): View
     {
         $domaine = bySlug($slug, thematique::class);
-        return view('pages.detailDomaine', compact("domaine"));
+        // Récupérer les autres services
+    $services = thematique::where('slug', '!=', $slug)->get();
+        return view('pages.detailDomaine', compact("domaine","services"));
     }
     public function detailProjet($slug): View
     {
