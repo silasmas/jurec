@@ -193,10 +193,10 @@
                             <img class="img-fluid" src="{{ asset('storage/' . $domaine->couverture[0]) }}" alt="">
                             <div class="p-4">
                                 <h4> <a href="{{ route('detailDomaine', ['slug' => $domaine->slug]) }}"
-                                        class="text-white truncate-text">{{ Str::limit($domaine->titre, 50, '...') }}</a>
-                                    <span class="badge bg-primary mt-30">
+                                        class="text-white truncate-text">{{ Str::limit($domaine->titre, 30, '...') }}</a>
+                                    {{-- <span class="badge bg-primary mt-30">
                                         {{ $domaine->categorie->nom }}
-                                    </span>
+                                    </span> --}}
                                 </h4>
                                 <p class="mb-0 pb-0 text-white truncate-text">{{ Str::limit($domaine->resume, 80, '...') }}.</p>
                             </div>
