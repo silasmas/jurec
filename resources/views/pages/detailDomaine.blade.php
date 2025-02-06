@@ -55,7 +55,7 @@
                             {{ $domaine->categorie->nom }}
                         </span>
                     </div>
-                    <p> {!! $domaine->description !!} </p>
+                    <p class="mx-auto my-4 p-4 text-justify bg-gray-100 rounded-lg shadow"> {!! $domaine->description !!} </p>
                     <div class="divider my-5"></div>
                     {{-- <div class="row">
                         <div class="col-lg-4 col-sm-4 sm-mb-30">
@@ -193,7 +193,7 @@
                             <img class="img-fluid" src="{{ asset('storage/' . $domaine->couverture[0]) }}" alt="">
                             <div class="p-4">
                                 <h4> <a href="{{ route('detailDomaine', ['slug' => $domaine->slug]) }}"
-                                        class="text-white truncate-text">{{ Str::limit($domaine->titre, 30, '...') }}</a>
+                                        class="text-white">{{ Str::limit($domaine->titre, 50, '...') }}</a>
                                     {{-- <span class="badge bg-primary mt-30">
                                         {{ $domaine->categorie->nom }}
                                     </span> --}}
