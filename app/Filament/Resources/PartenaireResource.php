@@ -111,8 +111,8 @@ class PartenaireResource extends Resource
     {
         return [
             'index' => Pages\ListPartenaires::route('/'),
-            // 'create' => Pages\CreatePartenaire::route('/create'),
-            // 'edit' => Pages\EditPartenaire::route('/{record}/edit'),
+            'create' => Pages\CreatePartenaire::route('/create'),
+            'edit' => Pages\EditPartenaire::route('/{record}/edit'),
         ];
     }
     public static function getNavigationBadge(): ?string

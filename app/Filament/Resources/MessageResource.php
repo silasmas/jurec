@@ -90,8 +90,8 @@ class MessageResource extends Resource
     {
         return [
             'index' => Pages\ListMessages::route('/'),
-            // 'create' => Pages\CreateMessage::route('/create'),
-            // 'edit' => Pages\EditMessage::route('/{record}/edit'),
+            'create' => Pages\CreateMessage::route('/create'),
+            'edit' => Pages\EditMessage::route('/{record}/edit'),
         ];
     }
     public static function getNavigationBadge(): ?string

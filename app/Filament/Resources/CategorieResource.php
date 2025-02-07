@@ -95,8 +95,8 @@ class CategorieResource extends Resource
     {
         return [
             'index' => Pages\ListCategories::route('/'),
-            // 'create' => Pages\CreateCategorie::route('/create'),
-            // 'edit' => Pages\EditCategorie::route('/{record}/edit'),
+            'create' => Pages\CreateCategorie::route('/create'),
+            'edit' => Pages\EditCategorie::route('/{record}/edit'),
         ];
     }
 }

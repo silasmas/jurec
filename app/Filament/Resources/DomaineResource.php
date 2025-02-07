@@ -96,8 +96,8 @@ class DomaineResource extends Resource
     {
         return [
             'index' => Pages\ListDomaines::route('/'),
-            // 'create' => Pages\CreateDomaine::route('/create'),
-            // 'edit' => Pages\EditDomaine::route('/{record}/edit'),
+            'create' => Pages\CreateDomaine::route('/create'),
+            'edit' => Pages\EditDomaine::route('/{record}/edit'),
         ];
     }
 }

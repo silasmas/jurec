@@ -132,8 +132,8 @@ class AboutResource extends Resource
     {
         return [
             'index' => Pages\ListAbouts::route('/'),
-            // 'create' => Pages\CreateAbout::route('/create'),
-            // 'edit' => Pages\EditAbout::route('/{record}/edit'),
+            'create' => Pages\CreateAbout::route('/create'),
+            'edit' => Pages\EditAbout::route('/{record}/edit'),
         ];
     }
 }
