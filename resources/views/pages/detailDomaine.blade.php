@@ -55,7 +55,7 @@
                         </span>
                         <h2 class="title">{{ $domaine->titre }} </h2>
                     </div>
-                    <div  class="mx-auto my-4 p-4 text-justify bg-gray-100 rounded-lg shadow">
+                    <div  class="mx-auto my-auto  p-2 text-justify bg-gray-100 rounded-lg shadow">
 
                         <p> {!! $domaine->description !!} </p>
                     </div>
