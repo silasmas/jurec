@@ -68,13 +68,13 @@
                                                                 <i class="fas fa-link"></i> Copier le lien
                                                             </a>
                                                         </li>
-                                                        @if($p->pdf!="" && $p->is_free==true)
+                                                        {{-- @if($p->pdf!="" && $p->is_free==true)
                                                         <li><a href="#" name="{{ asset('storage/'.$p->pdf) }}"
                                                                 id="download-pdf" class="icon medium"><i
                                                                     class="fas fa-file-pdf"></i> Télécharger le
                                                                 PDF</a></li>
 
-                                                        @endif
+                                                        @endif --}}
                                                     </ul>
                                                 </div>
                                                 <div class="entry-content">
