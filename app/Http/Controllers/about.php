@@ -79,11 +79,11 @@ class about extends Controller
     public function detailBlog($slug): View
     {
         $article = bySlug($slug, article::class);
-        $avant = article::where('id', '<', $article->id)
+        $avant = article::where([['id', '<', $article->id], ['is_active', '=', true]])
             ->orderBy('id', 'desc')
             ->first();
 
-        $apres = article::where('id', '>', $article->id)
+        $apres = article::where([['id', '>', $article->id], ['is_active', '=', true]])
             ->orderBy('id', 'asc')
             ->first();
         return view('pages.detailArticle', compact('article', 'avant', 'apres'));
